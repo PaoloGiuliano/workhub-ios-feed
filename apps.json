@@ -1,0 +1,40 @@
+{
+  "name": "WorkHub iOS",
+  "identifier": "com.workhub.ios.source",
+  "sourceURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/apps.json",
+  "subtitle": "WorkHub iPhone development builds",
+  "description": "Native, local-first iPhone inspections and ECC Daily Hand In. Direct Google Drive access, PDF preview, native PDF merging, and ZIP exports. Distributed as an unsigned IPA for sideloading.",
+  "website": "https://github.com/PaoloGiuliano/workhub-ios-feed",
+  "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
+  "tintColor": "#1463B4",
+  "apps": [
+    {
+      "name": "WorkHub",
+      "bundleIdentifier": "com.workhub.ios",
+      "developerName": "WorkHub",
+      "subtitle": "Inspections and ECC Daily Hand In",
+      "localizedDescription": "Native, local-first iPhone inspections and ECC Daily Hand In. Direct Google Drive access, PDF preview, native PDF merging, and ZIP exports. Distributed as an unsigned IPA for sideloading.",
+      "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
+      "tintColor": "#1463B4",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.3.0",
+          "buildVersion": "17",
+          "date": "2026-11-12T21:25:27Z",
+          "localizedDescription": "WorkHub iOS development build. Native Google Drive inspections, ECC Daily Hand In, and offline PDF/ZIP processing. Unsigned IPA; your sideloader handles signing.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.0-b17/WorkHubIOS-unsigned.ipa",
+          "size": 800618,
+          "sha256": "af1e33ed173df439c5966f2f10e1821b45dcc7991a71b2f4eadc22504a911486",
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "Capture Daily JHA photos for ECC Daily Hand In."
+        }
+      }
+    }
+  ]
+}
