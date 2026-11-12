@@ -31,10 +31,20 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {
-          "NSCameraUsageDescription": "Capture Daily JHA photos for ECC Daily Hand In."
-        }
-      }
+        "privacy": [
+          {
+            "name": "Camera",
+            "usageDescription": "Capture Daily JHA photos for ECC Daily Hand In."
+          }
+        ]
+      },
+      "version": "0.3.0",
+      "versionDate": "2026-11-12T21:25:27Z",
+      "versionDescription": "WorkHub iOS development build. Native Google Drive inspections, ECC Daily Hand In, and offline PDF/ZIP processing. Unsigned IPA; your sideloader handles signing.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.0-b17/WorkHubIOS-unsigned.ipa",
+      "size": 800618,
+      "sha256": "af1e33ed173df439c5966f2f10e1821b45dcc7991a71b2f4eadc22504a911486",
+      "minOSVersion": "17.0"
     }
   ]
 }
