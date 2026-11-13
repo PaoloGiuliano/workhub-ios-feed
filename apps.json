@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.4.0",
-      "versionDate": "2026-11-12T22:56:02Z",
+      "version": "0.4.1",
+      "versionDate": "2026-11-13T00:10:26Z",
       "versionDescription": "WorkHub iOS development build. Native Google Drive inspections, ECC Daily Hand In, and offline PDF/ZIP processing. Unsigned IPA; your sideloader handles signing.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.0-b25/WorkHubIOS-unsigned.ipa",
-      "size": 1049290,
-      "sha256": "8ad6291edcf646ed8fa882aec0fba7779773b06babe788ad597c3e2575c48bfe",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.1-b28/WorkHubIOS-unsigned.ipa",
+      "size": 1068344,
+      "sha256": "95a0dd6a4bff5c66cbb4b30cbad3ac110b6d303cf8c2066f662de74201d3e4e8",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.4.1",
+          "buildVersion": "28",
+          "date": "2026-11-13T00:10:26Z",
+          "localizedDescription": "WorkHub iOS development build. Native Google Drive inspections, ECC Daily Hand In, and offline PDF/ZIP processing. Unsigned IPA; your sideloader handles signing.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.1-b28/WorkHubIOS-unsigned.ipa",
+          "size": 1068344,
+          "sha256": "95a0dd6a4bff5c66cbb4b30cbad3ac110b6d303cf8c2066f662de74201d3e4e8",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.4.0",
           "buildVersion": "25",
@@ -81,7 +91,7 @@
         "privacy": [
           {
             "name": "Camera",
-            "usageDescription": "Capture Daily JHA photos for ECC Daily Hand In."
+            "usageDescription": "Take photos for the PDF Multi Tool and ECC Daily Hand In."
           }
         ]
       }
