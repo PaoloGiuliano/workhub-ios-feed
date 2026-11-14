@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.7",
-      "versionDate": "2026-11-14T19:55:41Z",
-      "versionDescription": "Added: Tap any added image or its filename in Field → Daily JHA to open a large, full-screen JHA photo preview without generating the daily package first.\nAdded: Pinch-to-zoom up to 6×, drag to pan when zoomed, and double-tap to zoom in or reset. Previous/next controls browse all JHA photos in their current draft order, with an image counter and a Done button.\nImproved: The preview respects each photo's existing 90° rotation without creating a second full-resolution rotated JPEG. Only the selected JPEG is decoded off the main UI thread, and its preview image is released when the viewer closes.\nSafe: Preview is read-only—JHA photo order, rotation, output, Drive inspections and previously exported documents are unchanged. Clear All also dismisses any selected preview.\nAdded: CI regression checks for tap-to-preview, photo order/navigation, zoom handling, rotation, and release of the loaded preview image.\nUnchanged: Daily JHA generation, photo import/reordering, Clear All, PDF Multi Tool, performance diagnostics, app icons and automatic IPA publishing.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.7-b117/WorkHubIOS-unsigned.ipa",
-      "size": 2367037,
-      "sha256": "533509d1cbbb811b3d68eaf5cc66b4b1bb8793f2201ba46afde3acef138d7949",
+      "version": "0.7.8",
+      "versionDate": "2026-11-14T20:23:14Z",
+      "versionDescription": "Improved safety: Removed the prominent red Disconnect and delete Google credentials button from Settings. Move local account removal to Settings → Account & security → Advanced connection actions, hidden behind a collapsed disclosure and a separate destructive confirmation.\nClarified: Disconnecting signs out and deletes manually saved OAuth credentials from iPhone Keychain, and clears the local Google Drive inspection cache (including downloaded inspection PDFs). It never deletes Google Drive originals, the Google account, or already exported JHA/PDF files.\nAdded: Settings → Appearance → Interface & navigation lets you choose Standard or enhanced Liquid Glass (iOS 26+), independently of light/dark mode and accent color. Live visual preview demonstrates the setting.\nAdded: In Liquid Glass mode, retain Apple's native floating iPhone tab bar and let it shrink while scrolling down and expand when scrolling back up. Accessible native tabs, hidden modules, saved tab order and draft state are retained.\nImproved: Native iOS 26 glass styling for the inspection search field, PDF Add Pages action, Daily JHA Generate action and select navigation controls. The rest of the content stays clean to preserve readability and minimize GPU/memory impact.\nCompatible: iOS 17–25 continue using standard materials; existing users keep their established styling until opting in. Restore Appearance Defaults reverts the interface style to Standard.\nAdded: CI regression checks for hidden/confirmed account removal, interface preferences, native tab behavior, and backward-compatible appearance.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.8-b128/WorkHubIOS-unsigned.ipa",
+      "size": 2477221,
+      "sha256": "bdbe0d78b76488929e0b043ae08c75c5f176bbfbd462dd4fd6d89d16056dd1b7",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.8",
+          "buildVersion": "128",
+          "date": "2026-11-14T20:23:14Z",
+          "localizedDescription": "Improved safety: Removed the prominent red Disconnect and delete Google credentials button from Settings. Move local account removal to Settings → Account & security → Advanced connection actions, hidden behind a collapsed disclosure and a separate destructive confirmation.\nClarified: Disconnecting signs out and deletes manually saved OAuth credentials from iPhone Keychain, and clears the local Google Drive inspection cache (including downloaded inspection PDFs). It never deletes Google Drive originals, the Google account, or already exported JHA/PDF files.\nAdded: Settings → Appearance → Interface & navigation lets you choose Standard or enhanced Liquid Glass (iOS 26+), independently of light/dark mode and accent color. Live visual preview demonstrates the setting.\nAdded: In Liquid Glass mode, retain Apple's native floating iPhone tab bar and let it shrink while scrolling down and expand when scrolling back up. Accessible native tabs, hidden modules, saved tab order and draft state are retained.\nImproved: Native iOS 26 glass styling for the inspection search field, PDF Add Pages action, Daily JHA Generate action and select navigation controls. The rest of the content stays clean to preserve readability and minimize GPU/memory impact.\nCompatible: iOS 17–25 continue using standard materials; existing users keep their established styling until opting in. Restore Appearance Defaults reverts the interface style to Standard.\nAdded: CI regression checks for hidden/confirmed account removal, interface preferences, native tab behavior, and backward-compatible appearance.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.8-b128/WorkHubIOS-unsigned.ipa",
+          "size": 2477221,
+          "sha256": "bdbe0d78b76488929e0b043ae08c75c5f176bbfbd462dd4fd6d89d16056dd1b7",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.7",
           "buildVersion": "117",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.2-b30/WorkHubIOS-unsigned.ipa",
           "size": 1080397,
           "sha256": "d704ef4110c78e2503b0a462b8c5f8923f42758e7ce416735d1a1ae0d07453d8",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.4.1",
-          "buildVersion": "28",
-          "date": "2026-11-13T00:10:26Z",
-          "localizedDescription": "Added: Add Pages menu with Select File, Select Image from Photos and Take Image using Camera.\nUpdated: Photos and camera captures enter the same PDF page stack as file imports.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.1-b28/WorkHubIOS-unsigned.ipa",
-          "size": 1068344,
-          "sha256": "95a0dd6a4bff5c66cbb4b30cbad3ac110b6d303cf8c2066f662de74201d3e4e8",
           "minOSVersion": "17.0"
         }
       ],
