@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.2",
-      "versionDate": "2026-11-14T01:26:20Z",
-      "versionDescription": "Improved: WorkHub's indexed inspection search now performs fuzzy word matching only once per unique normalized term in the catalog, instead of repeating the same edit-distance checks across thousands of PDF names and shared date aliases.\nImproved: Retains phrase matching, partial words, typo tolerance, filename-priority sorting, date aliases, and original result counts. One-time search index construction now deduplicates vocabulary words; interactive queries reuse those matches.\nAdded: Extended exact-result compatibility tests against the original search logic across 40 queries, including punctuation, accents, misspellings and date formats.\nImproved: Benchmark reports identify the number of unique vocabulary words for indexed search to make device performance measurements easier to interpret.\nUnchanged: Inspection metadata, cached PDFs, Google Drive updates, Daily JHA, PDF Multi Tool, app icons, and the feed distribution workflow.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.2-b96/WorkHubIOS-unsigned.ipa",
-      "size": 2214445,
-      "sha256": "266cf57e0eb6e8d6fbe75ee4a8f3570d2f5f58916af280f141c1e81d86df4b84",
+      "version": "0.7.3",
+      "versionDate": "2026-11-14T01:46:50Z",
+      "versionDescription": "Added: Settings → Performance Testing → Startup, UI smoothness & real PDFs, a new live diagnostic suite complementing repeatable benchmarks.\nAdded: An optional 20-second CADisplayLink measurement of main-run-loop callback intervals, 95th-percentile and worst callback gap, intervals over a 60 Hz target, approximate missed callbacks and sampled peak resident memory while navigating across WorkHub.\nAdded: Startup diagnostics for WorkHub initialization to first root view appearance, Google authentication restore duration and existing inspection metadata catalog disk loading. These are labeled as approximations, not full operating-system cold-launch instrumentation.\nAdded: Choose a PDF from Files to measure actual read-only copy, PDFKit open, bounded thumbnail rendering, and temporary three-page subset export. Supports PDFs up to 120 MB and 200 pages; never changes or retains the original document or filename.\nAdded: On-device diagnostic history with shareable aggregate text reports and cancellation; detailed results distinguish callback timing from GPU FPS and sampled memory from actual absolute peaks.\nAdded: Regression tests for frame timing and callback gap calculations.\nUnchanged: Inspection search, Daily JHA, caches, PDF Multi Tool, Home Screen icon choices and automatic workhub-ios-feed IPA distribution.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.3-b100/WorkHubIOS-unsigned.ipa",
+      "size": 2275045,
+      "sha256": "931afb36f2cf415ec21f3e08e995b0dbdc810dfbd332629fc7a10d9a148208ba",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.3",
+          "buildVersion": "100",
+          "date": "2026-11-14T01:46:50Z",
+          "localizedDescription": "Added: Settings → Performance Testing → Startup, UI smoothness & real PDFs, a new live diagnostic suite complementing repeatable benchmarks.\nAdded: An optional 20-second CADisplayLink measurement of main-run-loop callback intervals, 95th-percentile and worst callback gap, intervals over a 60 Hz target, approximate missed callbacks and sampled peak resident memory while navigating across WorkHub.\nAdded: Startup diagnostics for WorkHub initialization to first root view appearance, Google authentication restore duration and existing inspection metadata catalog disk loading. These are labeled as approximations, not full operating-system cold-launch instrumentation.\nAdded: Choose a PDF from Files to measure actual read-only copy, PDFKit open, bounded thumbnail rendering, and temporary three-page subset export. Supports PDFs up to 120 MB and 200 pages; never changes or retains the original document or filename.\nAdded: On-device diagnostic history with shareable aggregate text reports and cancellation; detailed results distinguish callback timing from GPU FPS and sampled memory from actual absolute peaks.\nAdded: Regression tests for frame timing and callback gap calculations.\nUnchanged: Inspection search, Daily JHA, caches, PDF Multi Tool, Home Screen icon choices and automatic workhub-ios-feed IPA distribution.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.3-b100/WorkHubIOS-unsigned.ipa",
+          "size": 2275045,
+          "sha256": "931afb36f2cf415ec21f3e08e995b0dbdc810dfbd332629fc7a10d9a148208ba",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.2",
           "buildVersion": "96",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.0-b18/WorkHubIOS-unsigned.ipa",
           "size": 800618,
           "sha256": "7d26b2968dfaa93a55f2c7f7bd7a4024deb53ab64c6a95253b5929b16b39ade9",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.3.0",
-          "buildVersion": "17",
-          "date": "2026-11-12T21:25:27Z",
-          "localizedDescription": "Added: Native Google Drive inspection browsing for ECC and CAMH Harness/Lift folders, PDF preview/share and local caching.\nAdded: ECC Daily Hand In with camera/photo JHA pages, date-based inspection PDFs and three-PDF ZIP exports.\nUpdated: All PDF processing runs on the iPhone, without a WorkHub server.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.0-b17/WorkHubIOS-unsigned.ipa",
-          "size": 800618,
-          "sha256": "af1e33ed173df439c5966f2f10e1821b45dcc7991a71b2f4eadc22504a911486",
           "minOSVersion": "17.0"
         }
       ],
