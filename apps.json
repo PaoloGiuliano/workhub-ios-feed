@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.3",
-      "versionDate": "2026-11-14T01:46:50Z",
-      "versionDescription": "Added: Settings → Performance Testing → Startup, UI smoothness & real PDFs, a new live diagnostic suite complementing repeatable benchmarks.\nAdded: An optional 20-second CADisplayLink measurement of main-run-loop callback intervals, 95th-percentile and worst callback gap, intervals over a 60 Hz target, approximate missed callbacks and sampled peak resident memory while navigating across WorkHub.\nAdded: Startup diagnostics for WorkHub initialization to first root view appearance, Google authentication restore duration and existing inspection metadata catalog disk loading. These are labeled as approximations, not full operating-system cold-launch instrumentation.\nAdded: Choose a PDF from Files to measure actual read-only copy, PDFKit open, bounded thumbnail rendering, and temporary three-page subset export. Supports PDFs up to 120 MB and 200 pages; never changes or retains the original document or filename.\nAdded: On-device diagnostic history with shareable aggregate text reports and cancellation; detailed results distinguish callback timing from GPU FPS and sampled memory from actual absolute peaks.\nAdded: Regression tests for frame timing and callback gap calculations.\nUnchanged: Inspection search, Daily JHA, caches, PDF Multi Tool, Home Screen icon choices and automatic workhub-ios-feed IPA distribution.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.3-b100/WorkHubIOS-unsigned.ipa",
-      "size": 2275045,
-      "sha256": "931afb36f2cf415ec21f3e08e995b0dbdc810dfbd332629fc7a10d9a148208ba",
+      "version": "0.7.4",
+      "versionDate": "2026-11-14T02:11:36Z",
+      "versionDescription": "Added: Performance Testing → Live Diagnostics now attributes display-link stalls and sampled memory changes to the active WorkHub tab or Field section, rather than showing only aggregate worst-gap and peak-memory numbers.\nAdded: A bounded timeline of tab changes and PDF workspace actions (import, preview, export and clear), with the twelve largest callback gaps and up to twenty-four recent actions in each shareable report. Only screen categories, counts, timestamps and memory are recorded—never inspection names or PDF filenames.\nAdded: Per-screen counts of slow callbacks, approximate missed callbacks, worst gap and sampled resident memory entry/peak/last, so Navigation and PDF-specific spikes can be compared directly.\nImproved: Previous v0.7.3 diagnostic history remains readable; attribution is opt-in and runs only during the existing 20-second UI monitor. Correlation with a screen/action is not a proof of root cause.\nAdded: Regression tests verifying per-screen attribution and sampled memory accounting.\nUnchanged: Existing PDF and thumbnail cache behavior, inspection caching, Daily JHA, performance microbenchmarks, icons and automatic IPA feed publishing.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.4-b105/WorkHubIOS-unsigned.ipa",
+      "size": 2312065,
+      "sha256": "9bc8e5abe879b78f816c8f1c7a6153ad3899c33ea63ed2c889fbd16e3ede4e97",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.4",
+          "buildVersion": "105",
+          "date": "2026-11-14T02:11:36Z",
+          "localizedDescription": "Added: Performance Testing → Live Diagnostics now attributes display-link stalls and sampled memory changes to the active WorkHub tab or Field section, rather than showing only aggregate worst-gap and peak-memory numbers.\nAdded: A bounded timeline of tab changes and PDF workspace actions (import, preview, export and clear), with the twelve largest callback gaps and up to twenty-four recent actions in each shareable report. Only screen categories, counts, timestamps and memory are recorded—never inspection names or PDF filenames.\nAdded: Per-screen counts of slow callbacks, approximate missed callbacks, worst gap and sampled resident memory entry/peak/last, so Navigation and PDF-specific spikes can be compared directly.\nImproved: Previous v0.7.3 diagnostic history remains readable; attribution is opt-in and runs only during the existing 20-second UI monitor. Correlation with a screen/action is not a proof of root cause.\nAdded: Regression tests verifying per-screen attribution and sampled memory accounting.\nUnchanged: Existing PDF and thumbnail cache behavior, inspection caching, Daily JHA, performance microbenchmarks, icons and automatic IPA feed publishing.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.4-b105/WorkHubIOS-unsigned.ipa",
+          "size": 2312065,
+          "sha256": "9bc8e5abe879b78f816c8f1c7a6153ad3899c33ea63ed2c889fbd16e3ede4e97",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.3",
           "buildVersion": "100",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.1-b21/WorkHubIOS-unsigned.ipa",
           "size": 922100,
           "sha256": "8108873e628b85edbc1b225c0735bc8c9faa951e726cdfaa38751bdaec24ea89",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.3.0",
-          "buildVersion": "18",
-          "date": "2026-11-12T21:30:33Z",
-          "localizedDescription": "Fixed: AltStore/SideStore feed compatibility by including legacy top-level app fields and the supported privacy-permissions format.\nUnchanged: The WorkHub app features match build 17.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.0-b18/WorkHubIOS-unsigned.ipa",
-          "size": 800618,
-          "sha256": "7d26b2968dfaa93a55f2c7f7bd7a4024deb53ab64c6a95253b5929b16b39ade9",
           "minOSVersion": "17.0"
         }
       ],
