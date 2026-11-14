@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.4",
-      "versionDate": "2026-11-14T02:11:36Z",
-      "versionDescription": "Added: Performance Testing → Live Diagnostics now attributes display-link stalls and sampled memory changes to the active WorkHub tab or Field section, rather than showing only aggregate worst-gap and peak-memory numbers.\nAdded: A bounded timeline of tab changes and PDF workspace actions (import, preview, export and clear), with the twelve largest callback gaps and up to twenty-four recent actions in each shareable report. Only screen categories, counts, timestamps and memory are recorded—never inspection names or PDF filenames.\nAdded: Per-screen counts of slow callbacks, approximate missed callbacks, worst gap and sampled resident memory entry/peak/last, so Navigation and PDF-specific spikes can be compared directly.\nImproved: Previous v0.7.3 diagnostic history remains readable; attribution is opt-in and runs only during the existing 20-second UI monitor. Correlation with a screen/action is not a proof of root cause.\nAdded: Regression tests verifying per-screen attribution and sampled memory accounting.\nUnchanged: Existing PDF and thumbnail cache behavior, inspection caching, Daily JHA, performance microbenchmarks, icons and automatic IPA feed publishing.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.4-b105/WorkHubIOS-unsigned.ipa",
-      "size": 2312065,
-      "sha256": "9bc8e5abe879b78f816c8f1c7a6153ad3899c33ea63ed2c889fbd16e3ede4e97",
+      "version": "0.7.5",
+      "versionDate": "2026-11-14T02:33:28Z",
+      "versionDescription": "Improved: PDF Multi Tool now prepares preview source PDF documents off the main UI thread, preventing synchronous PDF document parsing in PDFView.makeUIView during sheet presentation.\nImproved: PDFKit previews explicitly clear their PDF document reference on sheet teardown, and the SwiftUI preview releases its document after dismissal to reduce retained pages and renderer memory across multiple previews.\nImproved: The thumbnail renderer retains at most one open source PDF document rather than one per imported file, while continuing to use its existing bounded low-resolution image cache. Source documents are released when leaving the PDF workspace or closing a preview.\nAdded: A PDF preview-loaded event and preview-dismissed event to opt-in UI responsiveness reports for more precise before/after PDFKit and memory measurements.\nAdded: A CI regression test verifying the preview load/teardown lifecycle and bounded thumbnail document retention.\nUnchanged: Original PDFs, page order and rotations, export quality, selection, Google Drive inspection caches, Daily JHA and app appearance. Existing thumbnail images remain cached.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.5-b110/WorkHubIOS-unsigned.ipa",
+      "size": 2325478,
+      "sha256": "c93afa8f424fcae144f3bb208561f4ce2f64b7605dc5e0364deca29e7bb63886",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.5",
+          "buildVersion": "110",
+          "date": "2026-11-14T02:33:28Z",
+          "localizedDescription": "Improved: PDF Multi Tool now prepares preview source PDF documents off the main UI thread, preventing synchronous PDF document parsing in PDFView.makeUIView during sheet presentation.\nImproved: PDFKit previews explicitly clear their PDF document reference on sheet teardown, and the SwiftUI preview releases its document after dismissal to reduce retained pages and renderer memory across multiple previews.\nImproved: The thumbnail renderer retains at most one open source PDF document rather than one per imported file, while continuing to use its existing bounded low-resolution image cache. Source documents are released when leaving the PDF workspace or closing a preview.\nAdded: A PDF preview-loaded event and preview-dismissed event to opt-in UI responsiveness reports for more precise before/after PDFKit and memory measurements.\nAdded: A CI regression test verifying the preview load/teardown lifecycle and bounded thumbnail document retention.\nUnchanged: Original PDFs, page order and rotations, export quality, selection, Google Drive inspection caches, Daily JHA and app appearance. Existing thumbnail images remain cached.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.5-b110/WorkHubIOS-unsigned.ipa",
+          "size": 2325478,
+          "sha256": "c93afa8f424fcae144f3bb208561f4ce2f64b7605dc5e0364deca29e7bb63886",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.4",
           "buildVersion": "105",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.2-b23/WorkHubIOS-unsigned.ipa",
           "size": 944511,
           "sha256": "25c2c24128d5c59af08a42deacb8cf6f4ed8e8452b22b53b87e1a3be05920e5e",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.3.1",
-          "buildVersion": "21",
-          "date": "2026-11-12T22:00:54Z",
-          "localizedDescription": "Removed: Google Drive browsing through the iOS Files picker and manual inspection PDF imports.\nUpdated: Inspections and Daily Hand In use direct authorized Google Drive access.\nAdded: Branded hardhat/checklist iPhone Home Screen icon, also used by the sideloader feed.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.1-b21/WorkHubIOS-unsigned.ipa",
-          "size": 922100,
-          "sha256": "8108873e628b85edbc1b225c0735bc8c9faa951e726cdfaa38751bdaec24ea89",
           "minOSVersion": "17.0"
         }
       ],
