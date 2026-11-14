@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.5",
-      "versionDate": "2026-11-14T02:33:28Z",
-      "versionDescription": "Improved: PDF Multi Tool now prepares preview source PDF documents off the main UI thread, preventing synchronous PDF document parsing in PDFView.makeUIView during sheet presentation.\nImproved: PDFKit previews explicitly clear their PDF document reference on sheet teardown, and the SwiftUI preview releases its document after dismissal to reduce retained pages and renderer memory across multiple previews.\nImproved: The thumbnail renderer retains at most one open source PDF document rather than one per imported file, while continuing to use its existing bounded low-resolution image cache. Source documents are released when leaving the PDF workspace or closing a preview.\nAdded: A PDF preview-loaded event and preview-dismissed event to opt-in UI responsiveness reports for more precise before/after PDFKit and memory measurements.\nAdded: A CI regression test verifying the preview load/teardown lifecycle and bounded thumbnail document retention.\nUnchanged: Original PDFs, page order and rotations, export quality, selection, Google Drive inspection caches, Daily JHA and app appearance. Existing thumbnail images remain cached.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.5-b110/WorkHubIOS-unsigned.ipa",
-      "size": 2325478,
-      "sha256": "c93afa8f424fcae144f3bb208561f4ce2f64b7605dc5e0364deca29e7bb63886",
+      "version": "0.7.6",
+      "versionDate": "2026-11-14T17:55:57Z",
+      "versionDescription": "Added: Daily JHA now includes a visible Clear All button in the JHA photos section. It asks for confirmation before removing every attached camera/library JHA photo and resetting the page to today's date, default ZIP output option, and empty progress/error/output state.\nFixed: Clearing the Daily JHA also invalidates in-progress Photos picker imports so images selected before the reset cannot unexpectedly reappear after a slow PhotoKit load finishes.\nImproved: Reordering, deleting, rotating, or adding JHA images invalidates a previously generated output from the page, preventing accidental reuse after the draft changes.\nSafe: Clear All is disabled while Daily JHA is generating. Already exported files and Google Drive inspection caches remain intact; app appearance settings are unaffected.\nAdded: CI regression checks for confirmation, draft reset, and in-flight photo selection invalidation.\nUnchanged: PDF Multi Tool, Daily JHA generation and live ECC inspection fetching, performance diagnostics, icon customization and automatic IPA publishing.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.6-b113/WorkHubIOS-unsigned.ipa",
+      "size": 2331157,
+      "sha256": "b8f4291658b841b4609005c64e16dcd73e2b69f548e331f7a258bcc489bbf8fd",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.6",
+          "buildVersion": "113",
+          "date": "2026-11-14T17:55:57Z",
+          "localizedDescription": "Added: Daily JHA now includes a visible Clear All button in the JHA photos section. It asks for confirmation before removing every attached camera/library JHA photo and resetting the page to today's date, default ZIP output option, and empty progress/error/output state.\nFixed: Clearing the Daily JHA also invalidates in-progress Photos picker imports so images selected before the reset cannot unexpectedly reappear after a slow PhotoKit load finishes.\nImproved: Reordering, deleting, rotating, or adding JHA images invalidates a previously generated output from the page, preventing accidental reuse after the draft changes.\nSafe: Clear All is disabled while Daily JHA is generating. Already exported files and Google Drive inspection caches remain intact; app appearance settings are unaffected.\nAdded: CI regression checks for confirmation, draft reset, and in-flight photo selection invalidation.\nUnchanged: PDF Multi Tool, Daily JHA generation and live ECC inspection fetching, performance diagnostics, icon customization and automatic IPA publishing.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.6-b113/WorkHubIOS-unsigned.ipa",
+          "size": 2331157,
+          "sha256": "b8f4291658b841b4609005c64e16dcd73e2b69f548e331f7a258bcc489bbf8fd",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.5",
           "buildVersion": "110",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.0-b25/WorkHubIOS-unsigned.ipa",
           "size": 1049290,
           "sha256": "8ad6291edcf646ed8fa882aec0fba7779773b06babe788ad597c3e2575c48bfe",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.3.2",
-          "buildVersion": "23",
-          "date": "2026-11-12T22:18:14Z",
-          "localizedDescription": "Added: Daily Hand In ZIP on/off output choice.\nAdded: Copy three separately named inspection/JHA PDFs to the iPhone clipboard with a success toast.\nUpdated: ZIP mode automatically opens the iOS export sheet.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.3.2-b23/WorkHubIOS-unsigned.ipa",
-          "size": 944511,
-          "sha256": "25c2c24128d5c59af08a42deacb8cf6f4ed8e8452b22b53b87e1a3be05920e5e",
           "minOSVersion": "17.0"
         }
       ],
