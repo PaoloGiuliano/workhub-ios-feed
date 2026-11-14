@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.6",
-      "versionDate": "2026-11-14T17:55:57Z",
-      "versionDescription": "Added: Daily JHA now includes a visible Clear All button in the JHA photos section. It asks for confirmation before removing every attached camera/library JHA photo and resetting the page to today's date, default ZIP output option, and empty progress/error/output state.\nFixed: Clearing the Daily JHA also invalidates in-progress Photos picker imports so images selected before the reset cannot unexpectedly reappear after a slow PhotoKit load finishes.\nImproved: Reordering, deleting, rotating, or adding JHA images invalidates a previously generated output from the page, preventing accidental reuse after the draft changes.\nSafe: Clear All is disabled while Daily JHA is generating. Already exported files and Google Drive inspection caches remain intact; app appearance settings are unaffected.\nAdded: CI regression checks for confirmation, draft reset, and in-flight photo selection invalidation.\nUnchanged: PDF Multi Tool, Daily JHA generation and live ECC inspection fetching, performance diagnostics, icon customization and automatic IPA publishing.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.6-b113/WorkHubIOS-unsigned.ipa",
-      "size": 2331157,
-      "sha256": "b8f4291658b841b4609005c64e16dcd73e2b69f548e331f7a258bcc489bbf8fd",
+      "version": "0.7.7",
+      "versionDate": "2026-11-14T19:55:41Z",
+      "versionDescription": "Added: Tap any added image or its filename in Field → Daily JHA to open a large, full-screen JHA photo preview without generating the daily package first.\nAdded: Pinch-to-zoom up to 6×, drag to pan when zoomed, and double-tap to zoom in or reset. Previous/next controls browse all JHA photos in their current draft order, with an image counter and a Done button.\nImproved: The preview respects each photo's existing 90° rotation without creating a second full-resolution rotated JPEG. Only the selected JPEG is decoded off the main UI thread, and its preview image is released when the viewer closes.\nSafe: Preview is read-only—JHA photo order, rotation, output, Drive inspections and previously exported documents are unchanged. Clear All also dismisses any selected preview.\nAdded: CI regression checks for tap-to-preview, photo order/navigation, zoom handling, rotation, and release of the loaded preview image.\nUnchanged: Daily JHA generation, photo import/reordering, Clear All, PDF Multi Tool, performance diagnostics, app icons and automatic IPA publishing.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.7-b117/WorkHubIOS-unsigned.ipa",
+      "size": 2367037,
+      "sha256": "533509d1cbbb811b3d68eaf5cc66b4b1bb8793f2201ba46afde3acef138d7949",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.7",
+          "buildVersion": "117",
+          "date": "2026-11-14T19:55:41Z",
+          "localizedDescription": "Added: Tap any added image or its filename in Field → Daily JHA to open a large, full-screen JHA photo preview without generating the daily package first.\nAdded: Pinch-to-zoom up to 6×, drag to pan when zoomed, and double-tap to zoom in or reset. Previous/next controls browse all JHA photos in their current draft order, with an image counter and a Done button.\nImproved: The preview respects each photo's existing 90° rotation without creating a second full-resolution rotated JPEG. Only the selected JPEG is decoded off the main UI thread, and its preview image is released when the viewer closes.\nSafe: Preview is read-only—JHA photo order, rotation, output, Drive inspections and previously exported documents are unchanged. Clear All also dismisses any selected preview.\nAdded: CI regression checks for tap-to-preview, photo order/navigation, zoom handling, rotation, and release of the loaded preview image.\nUnchanged: Daily JHA generation, photo import/reordering, Clear All, PDF Multi Tool, performance diagnostics, app icons and automatic IPA publishing.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.7-b117/WorkHubIOS-unsigned.ipa",
+          "size": 2367037,
+          "sha256": "533509d1cbbb811b3d68eaf5cc66b4b1bb8793f2201ba46afde3acef138d7949",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.6",
           "buildVersion": "113",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.1-b28/WorkHubIOS-unsigned.ipa",
           "size": 1068344,
           "sha256": "95a0dd6a4bff5c66cbb4b30cbad3ac110b6d303cf8c2066f662de74201d3e4e8",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.4.0",
-          "buildVersion": "25",
-          "date": "2026-11-12T22:56:02Z",
-          "localizedDescription": "Added: Native PDF Multi Tool with a combined multi-document page workspace, thumbnails, page selection and preview.\nAdded: Cross-document page ordering and custom-named merged PDF export.\nUpdated: PDF and image imports are processed locally.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.0-b25/WorkHubIOS-unsigned.ipa",
-          "size": 1049290,
-          "sha256": "8ad6291edcf646ed8fa882aec0fba7779773b06babe788ad597c3e2575c48bfe",
           "minOSVersion": "17.0"
         }
       ],
