@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.1",
-      "versionDate": "2026-11-15T19:15:11Z",
-      "versionDescription": "Fixed: Standard interface subtabs no longer show an extra rectangular material backing behind the rounded segmented control.\nFixed: Documents now shows PDF Multi Tool or Document Scanner page title above its PDF Multi Tool / Scanner segmented switch, matching Inspections.\nPreserved: PDF/Scanner draft state remains mounted during subtab switches. Navigation, scanning workflow, local PDF creation and existing appearance options remain unchanged.\nAdded: Manual document scanning now shows a live blue four-corner outline around detected page edges before the shutter is pressed; automatic mode uses the same guide. The outline tracks perspective with camera framing, never triggers a photo in manual mode, and clears for review/retake. The captured photo still receives its own high-resolution crop detection for final output.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.1-b100005/WorkHubIOS-unsigned.ipa",
-      "size": 2768650,
-      "sha256": "10bab72bdfa7e3bf4a19621650541c6b68f1fc87303c97e6711ee799d88d448f",
+      "version": "0.8.2",
+      "versionDate": "2026-11-15T23:55:28Z",
+      "versionDescription": "Fixed: Bottom navigation now occupies its own layout row instead of an inset over the native TabView, keeping page content above the dock. Scroll clearance is inserted into Forms, Lists, and ScrollViews, including Settings, Appearance, Inspections, Daily JHA, Scanner, PDF Multi Tool, diagnostics, and icon studios, so final controls can be scrolled into view.\nChanged: Standard-mode Inspections and Documents subtabs now use tap-only controls without iOS 26 drag-to-select behavior. Liquid Glass keeps its native segmented picker.\nAdded: Standard bottom navigation now supports sliding across tabs and releasing on a destination as well as tapping individual tabs.\nRedesigned: PDF Multi Tool shows a centered Add Pages card when empty, with Files/Photos/Camera choices and image compression retained at the top. After import, a compact Add More Pages button appears above the page workspace. Existing import/export and draft state remain unchanged.\nTesting: Check last-row access across all major screens, tap-only Standard subtabs and main dock dragging, plus PDF Multi Tool in empty and populated states.\nRefined: Empty PDF Multi Tool workspace now uses a narrower, centered dashed-outline upload panel inspired by BentoPDF. The entire panel opens WorkHub's existing Files/Photos/Camera chooser, with a compact blue Add Pages CTA; image compression stays separate at the top. This is a native tap target, not a misleading drag-and-drop promise.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.2-b100007/WorkHubIOS-unsigned.ipa",
+      "size": 2812392,
+      "sha256": "5ae56fdf0161325f5fdbb5f240421f25be9fdf66f538bc6239a7c6aef0e8ab5b",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.2",
+          "buildVersion": "100007",
+          "date": "2026-11-15T23:55:28Z",
+          "localizedDescription": "Fixed: Bottom navigation now occupies its own layout row instead of an inset over the native TabView, keeping page content above the dock. Scroll clearance is inserted into Forms, Lists, and ScrollViews, including Settings, Appearance, Inspections, Daily JHA, Scanner, PDF Multi Tool, diagnostics, and icon studios, so final controls can be scrolled into view.\nChanged: Standard-mode Inspections and Documents subtabs now use tap-only controls without iOS 26 drag-to-select behavior. Liquid Glass keeps its native segmented picker.\nAdded: Standard bottom navigation now supports sliding across tabs and releasing on a destination as well as tapping individual tabs.\nRedesigned: PDF Multi Tool shows a centered Add Pages card when empty, with Files/Photos/Camera choices and image compression retained at the top. After import, a compact Add More Pages button appears above the page workspace. Existing import/export and draft state remain unchanged.\nTesting: Check last-row access across all major screens, tap-only Standard subtabs and main dock dragging, plus PDF Multi Tool in empty and populated states.\nRefined: Empty PDF Multi Tool workspace now uses a narrower, centered dashed-outline upload panel inspired by BentoPDF. The entire panel opens WorkHub's existing Files/Photos/Camera chooser, with a compact blue Add Pages CTA; image compression stays separate at the top. This is a native tap target, not a misleading drag-and-drop promise.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.2-b100007/WorkHubIOS-unsigned.ipa",
+          "size": 2812392,
+          "sha256": "5ae56fdf0161325f5fdbb5f240421f25be9fdf66f538bc6239a7c6aef0e8ab5b",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.1",
           "buildVersion": "100005",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.2-b43/WorkHubIOS-unsigned.ipa",
           "size": 1369063,
           "sha256": "a5b86a10b50c446173eb14969b2f7dbf513e69fd09a732eb57691c4f49cc3f05",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.1",
-          "buildVersion": "41",
-          "date": "2026-11-13T01:57:58Z",
-          "localizedDescription": "Added: Appearance Studio with 12 preset accent colors, custom HEX and theme controls.\nAdded: Reorderable bottom tabs, startup-tab choices and screen-density options.\nAdded: PDF grid/list, filename visibility and Daily Hand In layout customization.\nAdded: Focused, Balanced and Detailed appearance presets.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.1-b41/WorkHubIOS-unsigned.ipa",
-          "size": 1249128,
-          "sha256": "f21277411b6123f50529b99c17a7e0de3a199a0b7874b683c836920fd77def21",
           "minOSVersion": "17.0"
         }
       ],
