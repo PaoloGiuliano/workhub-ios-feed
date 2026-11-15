@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.8",
-      "versionDate": "2026-11-14T20:23:14Z",
-      "versionDescription": "Improved safety: Removed the prominent red Disconnect and delete Google credentials button from Settings. Move local account removal to Settings → Account & security → Advanced connection actions, hidden behind a collapsed disclosure and a separate destructive confirmation.\nClarified: Disconnecting signs out and deletes manually saved OAuth credentials from iPhone Keychain, and clears the local Google Drive inspection cache (including downloaded inspection PDFs). It never deletes Google Drive originals, the Google account, or already exported JHA/PDF files.\nAdded: Settings → Appearance → Interface & navigation lets you choose Standard or enhanced Liquid Glass (iOS 26+), independently of light/dark mode and accent color. Live visual preview demonstrates the setting.\nAdded: In Liquid Glass mode, retain Apple's native floating iPhone tab bar and let it shrink while scrolling down and expand when scrolling back up. Accessible native tabs, hidden modules, saved tab order and draft state are retained.\nImproved: Native iOS 26 glass styling for the inspection search field, PDF Add Pages action, Daily JHA Generate action and select navigation controls. The rest of the content stays clean to preserve readability and minimize GPU/memory impact.\nCompatible: iOS 17–25 continue using standard materials; existing users keep their established styling until opting in. Restore Appearance Defaults reverts the interface style to Standard.\nAdded: CI regression checks for hidden/confirmed account removal, interface preferences, native tab behavior, and backward-compatible appearance.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.8-b128/WorkHubIOS-unsigned.ipa",
-      "size": 2477221,
-      "sha256": "bdbe0d78b76488929e0b043ae08c75c5f176bbfbd462dd4fd6d89d16056dd1b7",
+      "version": "0.7.9",
+      "versionDate": "2026-11-15T03:57:53Z",
+      "versionDescription": "New: Documents replaces the PDF Multi Tool main-tab title while preserving its saved tab identifier, tab order and existing PDF workspace. Documents contains two subtabs: PDF Multi Tool and Document Scanner; independently hide either module or set the preferred subtab in Appearance.\nNew: Native Apple VisionKit document scanner captures multiple pages from the camera, with automatic page-edge detection, perspective correction, interactive crop and filters before saving a scan. Return to the scanner to add more pages.\nNew: Review scanned pages in configurable grid or list form, preview/zoom, reorder, rotate left or right, remove individual scans, and Clear All with confirmation. Image processing is bounded to 40 pages and three configurable capture quality presets. Scans are prepared offline on device; no Google Drive upload.\nNew: Export an image-based PDF using Original proportions, Letter or A4 page sizing. Validate that the generated PDF opens and that its page count matches the scan. Save to Files or share with the system share sheet, or send the PDF directly into PDF Multi Tool for further editing. Old local scan exports are cleaned after seven days; already saved/shared copies remain untouched. Searchable OCR isn't included in this release.\nImproved: Appearance now groups Look & feel, Navigation, Workspace layouts, visible modules, presets and reset more clearly; Liquid Glass controls live on a focused detail page. Document Scanner has its own appearance settings for layout, thumbnail size, counters, tips, capture quality and PDF paper size. Existing PDF Multi Tool appearance settings keep their previous keys.\nImproved: Liquid Glass and Standard use visibly different navigation styling with a floating dock and adjustable WorkHub glass clarity where iOS 26 supports it.\nImproved: Shared thumbnail preview-eye overlays and rotate-left/right menus across PDF Multi Tool, Daily JHA and Document Scanner. JHA supports rotating within its full-screen preview.\nSafety: Google credential management stays tucked into advanced account settings. Scanner results never upload automatically; PDF exports are created on device. Existing inspection cache, JHA generation and PDF original files are untouched.\nBuild: Codemagic is the manual primary builder; GitHub Actions remains a manual-only backup.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.9-b100002/WorkHubIOS-unsigned.ipa",
+      "size": 2703740,
+      "sha256": "c11735354b7e5e087805a1c53c08fb9f8c4e62230c08b225d41b4d5518f9e62a",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.7.9",
+          "buildVersion": "100002",
+          "date": "2026-11-15T03:57:53Z",
+          "localizedDescription": "New: Documents replaces the PDF Multi Tool main-tab title while preserving its saved tab identifier, tab order and existing PDF workspace. Documents contains two subtabs: PDF Multi Tool and Document Scanner; independently hide either module or set the preferred subtab in Appearance.\nNew: Native Apple VisionKit document scanner captures multiple pages from the camera, with automatic page-edge detection, perspective correction, interactive crop and filters before saving a scan. Return to the scanner to add more pages.\nNew: Review scanned pages in configurable grid or list form, preview/zoom, reorder, rotate left or right, remove individual scans, and Clear All with confirmation. Image processing is bounded to 40 pages and three configurable capture quality presets. Scans are prepared offline on device; no Google Drive upload.\nNew: Export an image-based PDF using Original proportions, Letter or A4 page sizing. Validate that the generated PDF opens and that its page count matches the scan. Save to Files or share with the system share sheet, or send the PDF directly into PDF Multi Tool for further editing. Old local scan exports are cleaned after seven days; already saved/shared copies remain untouched. Searchable OCR isn't included in this release.\nImproved: Appearance now groups Look & feel, Navigation, Workspace layouts, visible modules, presets and reset more clearly; Liquid Glass controls live on a focused detail page. Document Scanner has its own appearance settings for layout, thumbnail size, counters, tips, capture quality and PDF paper size. Existing PDF Multi Tool appearance settings keep their previous keys.\nImproved: Liquid Glass and Standard use visibly different navigation styling with a floating dock and adjustable WorkHub glass clarity where iOS 26 supports it.\nImproved: Shared thumbnail preview-eye overlays and rotate-left/right menus across PDF Multi Tool, Daily JHA and Document Scanner. JHA supports rotating within its full-screen preview.\nSafety: Google credential management stays tucked into advanced account settings. Scanner results never upload automatically; PDF exports are created on device. Existing inspection cache, JHA generation and PDF original files are untouched.\nBuild: Codemagic is the manual primary builder; GitHub Actions remains a manual-only backup.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.9-b100002/WorkHubIOS-unsigned.ipa",
+          "size": 2703740,
+          "sha256": "c11735354b7e5e087805a1c53c08fb9f8c4e62230c08b225d41b4d5518f9e62a",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.8",
           "buildVersion": "128",
@@ -264,16 +274,6 @@
           "size": 1157681,
           "sha256": "7a923dc78b92d74a07b91f66015885bbec75364bf03beab28392d634bd7a44d9",
           "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.4.2",
-          "buildVersion": "30",
-          "date": "2026-11-13T00:28:08Z",
-          "localizedDescription": "Added: Small, Balanced and High image-compression presets for new PDF workspace images.\nUpdated: Images are downsampled and JPEG-compressed before conversion to PDF pages.\nAdded: Before/after size feedback when importing images.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.2-b30/WorkHubIOS-unsigned.ipa",
-          "size": 1080397,
-          "sha256": "d704ef4110c78e2503b0a462b8c5f8923f42758e7ce416735d1a1ae0d07453d8",
-          "minOSVersion": "17.0"
         }
       ],
       "appPermissions": {
@@ -281,7 +281,7 @@
         "privacy": [
           {
             "name": "Camera",
-            "usageDescription": "Take photos for the PDF Multi Tool and ECC Daily Hand In."
+            "usageDescription": "Scan paper documents and capture photos for PDF Multi Tool and ECC Daily JHA."
           }
         ]
       }
