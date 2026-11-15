@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.0",
-      "versionDate": "2026-11-15T17:17:22Z",
-      "versionDescription": "Fixed: Standard navigation is now solid and bottom-attached instead of a floating translucent capsule. Liquid Glass retains the separate floating dock; both share a reserved bottom safe-area layout to reduce obscured controls.\nImproved: Inspections and Documents subtabs now use shared consistent height and padding.\nChanged: Document Scanner uses a one-page camera flow with manual shutter or optional stable-edge Auto Capture (off by default), on-device perspective correction and page review with filters. After each page, select Next Page to resume scanning; automatic capture cannot repeatedly photograph the same page.\nRetained: Scanner grid/list, 40-page cap, rotation, reorder, local verified PDF exports, share/save, compression choices and PDF Multi Tool handoff.\nTesting: Built for manual Codemagic compilation and on-device review; confirm scanner crop and both navigation modes on iPhone.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.0-b100004/WorkHubIOS-unsigned.ipa",
-      "size": 2760093,
-      "sha256": "feecaf28f56e7ea321abc04a47e7709d85b424896dbc39eb427357c0d8805060",
+      "version": "0.8.1",
+      "versionDate": "2026-11-15T19:15:11Z",
+      "versionDescription": "Fixed: Standard interface subtabs no longer show an extra rectangular material backing behind the rounded segmented control.\nFixed: Documents now shows PDF Multi Tool or Document Scanner page title above its PDF Multi Tool / Scanner segmented switch, matching Inspections.\nPreserved: PDF/Scanner draft state remains mounted during subtab switches. Navigation, scanning workflow, local PDF creation and existing appearance options remain unchanged.\nAdded: Manual document scanning now shows a live blue four-corner outline around detected page edges before the shutter is pressed; automatic mode uses the same guide. The outline tracks perspective with camera framing, never triggers a photo in manual mode, and clears for review/retake. The captured photo still receives its own high-resolution crop detection for final output.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.1-b100005/WorkHubIOS-unsigned.ipa",
+      "size": 2768650,
+      "sha256": "10bab72bdfa7e3bf4a19621650541c6b68f1fc87303c97e6711ee799d88d448f",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.1",
+          "buildVersion": "100005",
+          "date": "2026-11-15T19:15:11Z",
+          "localizedDescription": "Fixed: Standard interface subtabs no longer show an extra rectangular material backing behind the rounded segmented control.\nFixed: Documents now shows PDF Multi Tool or Document Scanner page title above its PDF Multi Tool / Scanner segmented switch, matching Inspections.\nPreserved: PDF/Scanner draft state remains mounted during subtab switches. Navigation, scanning workflow, local PDF creation and existing appearance options remain unchanged.\nAdded: Manual document scanning now shows a live blue four-corner outline around detected page edges before the shutter is pressed; automatic mode uses the same guide. The outline tracks perspective with camera framing, never triggers a photo in manual mode, and clears for review/retake. The captured photo still receives its own high-resolution crop detection for final output.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.1-b100005/WorkHubIOS-unsigned.ipa",
+          "size": 2768650,
+          "sha256": "10bab72bdfa7e3bf4a19621650541c6b68f1fc87303c97e6711ee799d88d448f",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.0",
           "buildVersion": "100004",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.1-b41/WorkHubIOS-unsigned.ipa",
           "size": 1249128,
           "sha256": "f21277411b6123f50529b99c17a7e0de3a199a0b7874b683c836920fd77def21",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.0",
-          "buildVersion": "39",
-          "date": "2026-11-13T01:13:03Z",
-          "localizedDescription": "Fixed: Files document imports using a reliable copy-mode iOS document picker.\nUpdated: PDF reordering uses native drag handles in a dedicated Pages/Whole Files list.\nMerged: Inspections and Daily Hand In into one field-work tab.\nAdded: Appearance settings for themes, accents, module visibility and page density.\nRemoved: Redundant Google Drive banners and source-folder clutter from the default screens.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.0-b39/WorkHubIOS-unsigned.ipa",
-          "size": 1160610,
-          "sha256": "a0a148f2e02a7921314181d5580e16bb6dc85d35fe4cc33dbd244a952f2fe428",
           "minOSVersion": "17.0"
         }
       ],
