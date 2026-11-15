@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.7.9",
-      "versionDate": "2026-11-15T03:57:53Z",
-      "versionDescription": "New: Documents replaces the PDF Multi Tool main-tab title while preserving its saved tab identifier, tab order and existing PDF workspace. Documents contains two subtabs: PDF Multi Tool and Document Scanner; independently hide either module or set the preferred subtab in Appearance.\nNew: Native Apple VisionKit document scanner captures multiple pages from the camera, with automatic page-edge detection, perspective correction, interactive crop and filters before saving a scan. Return to the scanner to add more pages.\nNew: Review scanned pages in configurable grid or list form, preview/zoom, reorder, rotate left or right, remove individual scans, and Clear All with confirmation. Image processing is bounded to 40 pages and three configurable capture quality presets. Scans are prepared offline on device; no Google Drive upload.\nNew: Export an image-based PDF using Original proportions, Letter or A4 page sizing. Validate that the generated PDF opens and that its page count matches the scan. Save to Files or share with the system share sheet, or send the PDF directly into PDF Multi Tool for further editing. Old local scan exports are cleaned after seven days; already saved/shared copies remain untouched. Searchable OCR isn't included in this release.\nImproved: Appearance now groups Look & feel, Navigation, Workspace layouts, visible modules, presets and reset more clearly; Liquid Glass controls live on a focused detail page. Document Scanner has its own appearance settings for layout, thumbnail size, counters, tips, capture quality and PDF paper size. Existing PDF Multi Tool appearance settings keep their previous keys.\nImproved: Liquid Glass and Standard use visibly different navigation styling with a floating dock and adjustable WorkHub glass clarity where iOS 26 supports it.\nImproved: Shared thumbnail preview-eye overlays and rotate-left/right menus across PDF Multi Tool, Daily JHA and Document Scanner. JHA supports rotating within its full-screen preview.\nSafety: Google credential management stays tucked into advanced account settings. Scanner results never upload automatically; PDF exports are created on device. Existing inspection cache, JHA generation and PDF original files are untouched.\nBuild: Codemagic is the manual primary builder; GitHub Actions remains a manual-only backup.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.9-b100002/WorkHubIOS-unsigned.ipa",
-      "size": 2703740,
-      "sha256": "c11735354b7e5e087805a1c53c08fb9f8c4e62230c08b225d41b4d5518f9e62a",
+      "version": "0.8.0",
+      "versionDate": "2026-11-15T17:17:22Z",
+      "versionDescription": "Fixed: Standard navigation is now solid and bottom-attached instead of a floating translucent capsule. Liquid Glass retains the separate floating dock; both share a reserved bottom safe-area layout to reduce obscured controls.\nImproved: Inspections and Documents subtabs now use shared consistent height and padding.\nChanged: Document Scanner uses a one-page camera flow with manual shutter or optional stable-edge Auto Capture (off by default), on-device perspective correction and page review with filters. After each page, select Next Page to resume scanning; automatic capture cannot repeatedly photograph the same page.\nRetained: Scanner grid/list, 40-page cap, rotation, reorder, local verified PDF exports, share/save, compression choices and PDF Multi Tool handoff.\nTesting: Built for manual Codemagic compilation and on-device review; confirm scanner crop and both navigation modes on iPhone.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.0-b100004/WorkHubIOS-unsigned.ipa",
+      "size": 2760093,
+      "sha256": "feecaf28f56e7ea321abc04a47e7709d85b424896dbc39eb427357c0d8805060",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.0",
+          "buildVersion": "100004",
+          "date": "2026-11-15T17:17:22Z",
+          "localizedDescription": "Fixed: Standard navigation is now solid and bottom-attached instead of a floating translucent capsule. Liquid Glass retains the separate floating dock; both share a reserved bottom safe-area layout to reduce obscured controls.\nImproved: Inspections and Documents subtabs now use shared consistent height and padding.\nChanged: Document Scanner uses a one-page camera flow with manual shutter or optional stable-edge Auto Capture (off by default), on-device perspective correction and page review with filters. After each page, select Next Page to resume scanning; automatic capture cannot repeatedly photograph the same page.\nRetained: Scanner grid/list, 40-page cap, rotation, reorder, local verified PDF exports, share/save, compression choices and PDF Multi Tool handoff.\nTesting: Built for manual Codemagic compilation and on-device review; confirm scanner crop and both navigation modes on iPhone.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.0-b100004/WorkHubIOS-unsigned.ipa",
+          "size": 2760093,
+          "sha256": "feecaf28f56e7ea321abc04a47e7709d85b424896dbc39eb427357c0d8805060",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.7.9",
           "buildVersion": "100002",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.0-b39/WorkHubIOS-unsigned.ipa",
           "size": 1160610,
           "sha256": "a0a148f2e02a7921314181d5580e16bb6dc85d35fe4cc33dbd244a952f2fe428",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.4.3",
-          "buildVersion": "32",
-          "date": "2026-11-13T00:47:05Z",
-          "localizedDescription": "Added: Dedicated PDF Arrange mode with numbered thumbnails and improved page movement.\nAdded: Whole-file reordering, Undo and precise page-move controls.\nUpdated: PDF workspace layout emphasizes page order during rearrangement.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.4.3-b32/WorkHubIOS-unsigned.ipa",
-          "size": 1157681,
-          "sha256": "7a923dc78b92d74a07b91f66015885bbec75364bf03beab28392d634bd7a44d9",
           "minOSVersion": "17.0"
         }
       ],
