@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.2",
-      "versionDate": "2026-11-15T23:55:28Z",
-      "versionDescription": "Fixed: Bottom navigation now occupies its own layout row instead of an inset over the native TabView, keeping page content above the dock. Scroll clearance is inserted into Forms, Lists, and ScrollViews, including Settings, Appearance, Inspections, Daily JHA, Scanner, PDF Multi Tool, diagnostics, and icon studios, so final controls can be scrolled into view.\nChanged: Standard-mode Inspections and Documents subtabs now use tap-only controls without iOS 26 drag-to-select behavior. Liquid Glass keeps its native segmented picker.\nAdded: Standard bottom navigation now supports sliding across tabs and releasing on a destination as well as tapping individual tabs.\nRedesigned: PDF Multi Tool shows a centered Add Pages card when empty, with Files/Photos/Camera choices and image compression retained at the top. After import, a compact Add More Pages button appears above the page workspace. Existing import/export and draft state remain unchanged.\nTesting: Check last-row access across all major screens, tap-only Standard subtabs and main dock dragging, plus PDF Multi Tool in empty and populated states.\nRefined: Empty PDF Multi Tool workspace now uses a narrower, centered dashed-outline upload panel inspired by BentoPDF. The entire panel opens WorkHub's existing Files/Photos/Camera chooser, with a compact blue Add Pages CTA; image compression stays separate at the top. This is a native tap target, not a misleading drag-and-drop promise.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.2-b100007/WorkHubIOS-unsigned.ipa",
-      "size": 2812392,
-      "sha256": "5ae56fdf0161325f5fdbb5f240421f25be9fdf66f538bc6239a7c6aef0e8ab5b",
+      "version": "0.8.3",
+      "versionDate": "2026-11-16T02:58:25Z",
+      "versionDescription": "Fixed: PDF Multi Tool's Add Pages chooser now opens a compact, centered native alert rather than the oversized bottom-positioned confirmation dialog.\nSimplified: Removed redundant instructional text; the chooser displays only Select File, Select Image, Take Image (when the camera is available), and Cancel.\nUnchanged: The centered Bento-inspired Add Pages panel, image compression at the top, existing Files/Photos/Camera imports, page editing, export and navigation behavior from v0.8.2 are preserved.\nAdded: Compact Quick Actions on the Today dashboard open Daily JHA, Scanner or PDF Multi Tool without adding another main tab. Quick Actions can be disabled in Appearance → Inspections layout.\nAdded: Recover unfinished Daily JHA, Document Scanner and PDF Multi Tool drafts across app relaunches. Store photos, scanned pages and imported PDF source files locally in Application Support, along with order, selection, rotations and output names; clearing a draft does not delete saved dailies.\nAdded: Daily JHA PDFs generated successfully are archived by their hand-in date into monthly groups. Daily Hand In → Monthly Daily JHA archive lets you preview each saved daily or combine all saved dailies for a chosen month into a single chronological PDF (for example, October 2026 Dailies.pdf). Only the JHA PDF is included; Harness and Lift inspection PDFs remain separate.\nImproved: Settings overview is more concise, advanced module visibility/layout presets are collapsed by default, and previously available customization remains accessible.\nNote: The local monthly archive begins capturing successfully generated JHAs from this update onward; old documents saved elsewhere are not automatically imported.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.3-b100008/WorkHubIOS-unsigned.ipa",
+      "size": 2928682,
+      "sha256": "b0cb8269bba7b3a96fed77425f52675fe601e25aabc49da75c00f2640479f567",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.3",
+          "buildVersion": "100008",
+          "date": "2026-11-16T02:58:25Z",
+          "localizedDescription": "Fixed: PDF Multi Tool's Add Pages chooser now opens a compact, centered native alert rather than the oversized bottom-positioned confirmation dialog.\nSimplified: Removed redundant instructional text; the chooser displays only Select File, Select Image, Take Image (when the camera is available), and Cancel.\nUnchanged: The centered Bento-inspired Add Pages panel, image compression at the top, existing Files/Photos/Camera imports, page editing, export and navigation behavior from v0.8.2 are preserved.\nAdded: Compact Quick Actions on the Today dashboard open Daily JHA, Scanner or PDF Multi Tool without adding another main tab. Quick Actions can be disabled in Appearance → Inspections layout.\nAdded: Recover unfinished Daily JHA, Document Scanner and PDF Multi Tool drafts across app relaunches. Store photos, scanned pages and imported PDF source files locally in Application Support, along with order, selection, rotations and output names; clearing a draft does not delete saved dailies.\nAdded: Daily JHA PDFs generated successfully are archived by their hand-in date into monthly groups. Daily Hand In → Monthly Daily JHA archive lets you preview each saved daily or combine all saved dailies for a chosen month into a single chronological PDF (for example, October 2026 Dailies.pdf). Only the JHA PDF is included; Harness and Lift inspection PDFs remain separate.\nImproved: Settings overview is more concise, advanced module visibility/layout presets are collapsed by default, and previously available customization remains accessible.\nNote: The local monthly archive begins capturing successfully generated JHAs from this update onward; old documents saved elsewhere are not automatically imported.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.3-b100008/WorkHubIOS-unsigned.ipa",
+          "size": 2928682,
+          "sha256": "b0cb8269bba7b3a96fed77425f52675fe601e25aabc49da75c00f2640479f567",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.2",
           "buildVersion": "100007",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.3-b45/WorkHubIOS-unsigned.ipa",
           "size": 1412201,
           "sha256": "8609cb3a85c3928306b14de31ea23277721fded6f1b00c60d4307ae21f56adb2",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.2",
-          "buildVersion": "43",
-          "date": "2026-11-13T02:42:02Z",
-          "localizedDescription": "Added: Local fuzzy inspection search by PDF name, partial words and multiple date formats.\nAdded: PDF counters per date folder, per source and across the full inspection directory.\nAdded: Daily totals combined across ECC/CAMH sources.\nUpdated: Metadata indexing uses batched Drive requests with progress and caching.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.2-b43/WorkHubIOS-unsigned.ipa",
-          "size": 1369063,
-          "sha256": "a5b86a10b50c446173eb14969b2f7dbf513e69fd09a732eb57691c4f49cc3f05",
           "minOSVersion": "17.0"
         }
       ],
