@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.4",
-      "versionDate": "2026-11-16T14:25:32Z",
-      "versionDescription": "Fixed: Document Scanner now uses the largest plausible page rectangle from multiple Vision observations rather than the first high-confidence inner box. Very small rectangles within safety forms are rejected; manual shutter always works even without a detected page.\nAdded: A four-corner manual crop editor is shown after taking a scan, on the complete uncropped image. Drag each blue corner to the real paper edge, preview the perspective-straightened result, reset to the full image or the suggested corners, disable cropping, apply a filter, retake, or accept. The final crop is created only after approval and remains local.\nAdded: Daily JHA Take JHA photos opens a continuous camera session. Capture multiple photos up to the 20-photo total, see the count and last photo, undo a capture, then tap Done to add the whole batch at once. Cancel discards only the new batch. Images are compressed once locally and the existing draft is saved once for the batch.\nPreserved: Scanner Next Page remains one-at-a-time, Auto Capture remains single-shot, PDF Multi Tool, Quick Actions, monthly Daily JHA archive, draft recovery and existing export formats remain unchanged.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.4-b100009/WorkHubIOS-unsigned.ipa",
-      "size": 2985904,
-      "sha256": "f2caca195d35784db902754c20d19d41acc391fe195d8dafca40b79ce3593200",
+      "version": "0.8.5",
+      "versionDate": "2026-11-16T17:09:58Z",
+      "versionDescription": "Improved: The Document Scanner manual four-corner editor now uses inset, draggable blue grips connected to the true crop vertices, keeping fingers approximately 46 points away from the page edge. While dragging, a circular 2.8× magnifier appears on the opposite side with a centered crosshair tracking the actual crop point. Rotation, filters, original-image fallback, perspective correction and manual/auto capture workflows remain intact.\nSimplified: Scanner and Daily JHA Clear All actions now show compact centered alerts with only the destructive action and Cancel, without verbose explanations. PDF Multi Tool's clear confirmation likewise drops its redundant paragraph. Removed repetitive instructional text, captions and unused hint toggles from Scanner, Daily JHA, PDF Multi Tool, Inspections, Today, Appearance, icon studios and performance screens.\nPreserved: Meaningful status and error messages, camera permission guidance, on-device draft recovery, monthly JHA archive, accessibility hints, OAuth setup instructions and brief security/storage warnings remain available.\nTesting: Verify crop-point visibility and loupe placement while dragging every corner, at normal and extreme perspectives, and verify the simplified confirmation dialogs in both Standard and Liquid Glass.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.5-b100011/WorkHubIOS-unsigned.ipa",
+      "size": 2959666,
+      "sha256": "1ecdb411b74269d719275bdec4ee6784c478da90e124b22fa12124d0816ef860",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.5",
+          "buildVersion": "100011",
+          "date": "2026-11-16T17:09:58Z",
+          "localizedDescription": "Improved: The Document Scanner manual four-corner editor now uses inset, draggable blue grips connected to the true crop vertices, keeping fingers approximately 46 points away from the page edge. While dragging, a circular 2.8× magnifier appears on the opposite side with a centered crosshair tracking the actual crop point. Rotation, filters, original-image fallback, perspective correction and manual/auto capture workflows remain intact.\nSimplified: Scanner and Daily JHA Clear All actions now show compact centered alerts with only the destructive action and Cancel, without verbose explanations. PDF Multi Tool's clear confirmation likewise drops its redundant paragraph. Removed repetitive instructional text, captions and unused hint toggles from Scanner, Daily JHA, PDF Multi Tool, Inspections, Today, Appearance, icon studios and performance screens.\nPreserved: Meaningful status and error messages, camera permission guidance, on-device draft recovery, monthly JHA archive, accessibility hints, OAuth setup instructions and brief security/storage warnings remain available.\nTesting: Verify crop-point visibility and loupe placement while dragging every corner, at normal and extreme perspectives, and verify the simplified confirmation dialogs in both Standard and Liquid Glass.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.5-b100011/WorkHubIOS-unsigned.ipa",
+          "size": 2959666,
+          "sha256": "1ecdb411b74269d719275bdec4ee6784c478da90e124b22fa12124d0816ef860",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.4",
           "buildVersion": "100009",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.5-b52/WorkHubIOS-unsigned.ipa",
           "size": 1519137,
           "sha256": "029f8d1a4684af3569760d1c8766169b5b2303dfaace6ea949e2d1cf033fb6c7",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.4",
-          "buildVersion": "48",
-          "date": "2026-11-13T03:24:55Z",
-          "localizedDescription": "Fixed: Inspections by day no longer groups and sorts all date folders every time the screen redraws; daily totals and display dates are precomputed once and saved with the 24-hour local index.\nImproved: Folder PDF count badges now use constant-time lookups instead of scanning every date folder.\nImproved: The daily breakdown shows seven days initially, with older dates added in small batches to keep navigation responsive.\nAdded: An automated large-catalog regression test covering 1,344 folders, 6,720 PDFs, cross-source daily counts, and migration of existing cached indexes.\nUnchanged: Inspections by day remains optional in Appearance. Google Drive, Daily Hand In, offline caching, and PDF Multi Tool are preserved.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.4-b48/WorkHubIOS-unsigned.ipa",
-          "size": 1416224,
-          "sha256": "35591ba01e9ea6e94a247e15ee2f5db8d8b2d16b6936cc190bc6243f593d0a79",
           "minOSVersion": "17.0"
         }
       ],
