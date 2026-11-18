@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.5",
-      "versionDate": "2026-11-16T17:09:58Z",
-      "versionDescription": "Improved: The Document Scanner manual four-corner editor now uses inset, draggable blue grips connected to the true crop vertices, keeping fingers approximately 46 points away from the page edge. While dragging, a circular 2.8× magnifier appears on the opposite side with a centered crosshair tracking the actual crop point. Rotation, filters, original-image fallback, perspective correction and manual/auto capture workflows remain intact.\nSimplified: Scanner and Daily JHA Clear All actions now show compact centered alerts with only the destructive action and Cancel, without verbose explanations. PDF Multi Tool's clear confirmation likewise drops its redundant paragraph. Removed repetitive instructional text, captions and unused hint toggles from Scanner, Daily JHA, PDF Multi Tool, Inspections, Today, Appearance, icon studios and performance screens.\nPreserved: Meaningful status and error messages, camera permission guidance, on-device draft recovery, monthly JHA archive, accessibility hints, OAuth setup instructions and brief security/storage warnings remain available.\nTesting: Verify crop-point visibility and loupe placement while dragging every corner, at normal and extreme perspectives, and verify the simplified confirmation dialogs in both Standard and Liquid Glass.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.5-b100011/WorkHubIOS-unsigned.ipa",
-      "size": 2959666,
-      "sha256": "1ecdb411b74269d719275bdec4ee6784c478da90e124b22fa12124d0816ef860",
+      "version": "0.8.7",
+      "versionDate": "2026-11-18T16:37:06Z",
+      "versionDescription": "Compression terminology: All three Documents workspaces now use a Compression Level setting labeled Low / Medium / High. Low means less compression and greater retained image quality (usually larger output); High means more compression and generally smaller output. The underlying PDF, Scanner and Images preset identifiers and actual numerical settings are unchanged, with visual order reversed where necessary to preserve the correct direction for existing users. Lossless images retain the existing separate Lossless mode, where no lossy Compression Level is appropriate.\nDaily JHA: Adds the same Low / Medium / High Compression Level control to its image imports and photo capture. New JHA Photos library imports are encoded on a background task at the selected dimension/JPEG quality; the existing continuous JHA camera now uses the same level. The 20-image limit remains enforced, imported photos enter the draft in order and are saved together after import. Existing draft photos and generated Daily JHA archives are not recompressed retroactively.\nPDF Multi Tool: Replaces the one-photo UIImagePicker with the existing continuous camera workflow used for Daily JHA. Take up to 20 photos (or remaining PDF workspace slots), review the count, Undo Last, Cancel without importing, or tap Done to stage and import the entire batch to the PDF page stack at once. The PDF workspace compression setting is still applied by the existing PDF image-conversion pipeline.\nAppearance: Adds the Daily JHA Compression Level preference. Manual Codemagic preflight contains a v0.8.7 regression guard and updated older tests. No GitHub Actions preflight or build added. Full Xcode compilation and device camera interaction require the next user-triggered Codemagic build.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.7-b100014/WorkHubIOS-unsigned.ipa",
+      "size": 3101257,
+      "sha256": "e396b9f70025861e8834ce031ca5560abc36baf4feb3dd9ab40c0f03f2993eae",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.7",
+          "buildVersion": "100014",
+          "date": "2026-11-18T16:37:06Z",
+          "localizedDescription": "Compression terminology: All three Documents workspaces now use a Compression Level setting labeled Low / Medium / High. Low means less compression and greater retained image quality (usually larger output); High means more compression and generally smaller output. The underlying PDF, Scanner and Images preset identifiers and actual numerical settings are unchanged, with visual order reversed where necessary to preserve the correct direction for existing users. Lossless images retain the existing separate Lossless mode, where no lossy Compression Level is appropriate.\nDaily JHA: Adds the same Low / Medium / High Compression Level control to its image imports and photo capture. New JHA Photos library imports are encoded on a background task at the selected dimension/JPEG quality; the existing continuous JHA camera now uses the same level. The 20-image limit remains enforced, imported photos enter the draft in order and are saved together after import. Existing draft photos and generated Daily JHA archives are not recompressed retroactively.\nPDF Multi Tool: Replaces the one-photo UIImagePicker with the existing continuous camera workflow used for Daily JHA. Take up to 20 photos (or remaining PDF workspace slots), review the count, Undo Last, Cancel without importing, or tap Done to stage and import the entire batch to the PDF page stack at once. The PDF workspace compression setting is still applied by the existing PDF image-conversion pipeline.\nAppearance: Adds the Daily JHA Compression Level preference. Manual Codemagic preflight contains a v0.8.7 regression guard and updated older tests. No GitHub Actions preflight or build added. Full Xcode compilation and device camera interaction require the next user-triggered Codemagic build.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.7-b100014/WorkHubIOS-unsigned.ipa",
+          "size": 3101257,
+          "sha256": "e396b9f70025861e8834ce031ca5560abc36baf4feb3dd9ab40c0f03f2993eae",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.5",
           "buildVersion": "100011",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.6-b55/WorkHubIOS-unsigned.ipa",
           "size": 1524621,
           "sha256": "ef976dc9c44bc789a17930ba6ffec39c1c8623757d9d6875d2e1eec9b1bb91ba",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.5",
-          "buildVersion": "52",
-          "date": "2026-11-13T12:26:32Z",
-          "localizedDescription": "Added: A new Today tab inside Inspections with a dashboard of PDFs filed in today's dated Google Drive inspection folders.\nAdded: Live total, Harness/Lift and ECC/CAMH breakdown cards, per-source counts, and preview/share access to today's PDFs.\nImproved: A dedicated lightweight lookup checks only today's folders, caches its results for five minutes, and preserves previously saved data if Google Drive is temporarily unavailable.\nAdded: Appearance options to hide the Today tab or open the field-work screen directly to Today.\nUnchanged: Bulk inspections use their 24-hour cache; Daily Hand In, PDF Multi Tool, and existing appearance settings are preserved.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.5-b52/WorkHubIOS-unsigned.ipa",
-          "size": 1519137,
-          "sha256": "029f8d1a4684af3569760d1c8766169b5b2303dfaace6ea949e2d1cf033fb6c7",
           "minOSVersion": "17.0"
         }
       ],
