@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.11",
-      "versionDate": "2026-11-20T20:07:33Z",
-      "versionDescription": "Improved: Browse → Inspections by day opens a dedicated date page rather than filling the search box.\nAdded: Two job-specific destinations (ECC and CAMH Forensics) with separate Harness/Lift counts and PDF lists, including Preview and Share / Save.\nImproved: Date-folder taps within source browsing and matching dates in fuzzy search use the same navigation; matching date rows are deduplicated across sources.\nPerformance: Grouping uses the existing local catalog once per metadata revision. No extra Drive fetches, and PDFs download only when opened. Partial-index counts are marked as provisional.\nUnchanged: Inspection caching, Daily JHA, Google Personal mode, Lock Screen widget, scanner and PDF tools. Source awaits manual macOS/iPhone compilation.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.11-b100023/WorkHubIOS-unsigned.ipa",
-      "size": 3220860,
-      "sha256": "aabbcedb853f410a46c8fc0ec651d938566fb2b59416a8f23572b4b830989543",
+      "version": "0.8.12",
+      "versionDate": "2026-11-20T22:26:45Z",
+      "versionDescription": "Fixed: Main app and Lock Screen widget can be built for the specific App Groups authorized by third-party signing certificates, rather than using only group.com.workhub.ios.\nAdded: Optional WORKHUB_APP_GROUP_ID Codemagic/GitHub environment variable injected into both target entitlements and runtime Info.plist values.\nDiagnosed: KravaSign's signed v0.8.11 IPA authorizes five provider-assigned groups in both app and extension, but not the previous WorkHub group. Choose an authorized provider group to test shared widget counts.\nPrivacy: Only inspection counts and checked time enter shared storage; group identifiers under a provider-shared developer team may be accessible to other apps using the same entitlement. Source awaits manual build and on-device verification.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.12-b100024/WorkHubIOS-unsigned.ipa",
+      "size": 3221411,
+      "sha256": "07ba51ec27045de7520b1dca94ac390caca22605b698b2f334041e22af3f0c61",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.12",
+          "buildVersion": "100024",
+          "date": "2026-11-20T22:26:45Z",
+          "localizedDescription": "Fixed: Main app and Lock Screen widget can be built for the specific App Groups authorized by third-party signing certificates, rather than using only group.com.workhub.ios.\nAdded: Optional WORKHUB_APP_GROUP_ID Codemagic/GitHub environment variable injected into both target entitlements and runtime Info.plist values.\nDiagnosed: KravaSign's signed v0.8.11 IPA authorizes five provider-assigned groups in both app and extension, but not the previous WorkHub group. Choose an authorized provider group to test shared widget counts.\nPrivacy: Only inspection counts and checked time enter shared storage; group identifiers under a provider-shared developer team may be accessible to other apps using the same entitlement. Source awaits manual build and on-device verification.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.12-b100024/WorkHubIOS-unsigned.ipa",
+          "size": 3221411,
+          "sha256": "07ba51ec27045de7520b1dca94ac390caca22605b698b2f334041e22af3f0c61",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.11",
           "buildVersion": "100023",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.1-b76/WorkHubIOS-unsigned.ipa",
           "size": 2089641,
           "sha256": "af21a7343eb59f0a6181660adb22cdb611811038937da2ac6a08b6574fb3498c",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.6.0",
-          "buildVersion": "73",
-          "date": "2026-11-13T23:35:42Z",
-          "localizedDescription": "Added: Choose WorkHub's actual iPhone Home Screen app icon from 13 visual options under Settings → Customize WorkHub → Home Screen app icon.\nAdded: Twelve original 1024px alternate icons with different artwork: Blueprint, Hardhat, Night Shift, Safety Shield, Scissor Lift, Fall Protection, WH Monogram, Inspection, Toolbox, Documents, Industrial, and Fieldwork, plus the original Classic.\nAdded: Large live icon previews, selected-state badges, and system-level icon changing through iOS's supported setAlternateIconName API.\nImproved: Clear feedback if a sideloading/signing method disables alternate icons or the icon change fails; WorkHub never falsely reports a change.\nVerified: GitHub Actions checks every generated image and all alternate registrations in the production IPA's Info.plist.\nUnchanged: Inspection dashboard icon customization, Google Drive, Daily Hand In, offline cache, and PDF Multi Tool.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.0-b73/WorkHubIOS-unsigned.ipa",
-          "size": 2003845,
-          "sha256": "2502f92426957d7a1af7136b6cf2cb1863c37048f39be7896e2fc77013d58abb",
           "minOSVersion": "17.0"
         }
       ],
