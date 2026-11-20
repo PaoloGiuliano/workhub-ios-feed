@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.7",
-      "versionDate": "2026-11-19T13:48:00Z",
-      "versionDescription": "Compression terminology: All three Documents workspaces now use a Compression Level setting labeled Low / Medium / High. Low means less compression and greater retained image quality (usually larger output); High means more compression and generally smaller output. The underlying PDF, Scanner and Images preset identifiers and actual numerical settings are unchanged, with visual order reversed where necessary to preserve the correct direction for existing users. Lossless images retain the existing separate Lossless mode, where no lossy Compression Level is appropriate.\nDaily JHA: Adds the same Low / Medium / High Compression Level control to its image imports and photo capture. New JHA Photos library imports are encoded on a background task at the selected dimension/JPEG quality; the existing continuous JHA camera now uses the same level. The 20-image limit remains enforced, imported photos enter the draft in order and are saved together after import. Existing draft photos and generated Daily JHA archives are not recompressed retroactively.\nPDF Multi Tool: Replaces the one-photo UIImagePicker with the existing continuous camera workflow used for Daily JHA. Take up to 20 photos (or remaining PDF workspace slots), review the count, Undo Last, Cancel without importing, or tap Done to stage and import the entire batch to the PDF page stack at once. The PDF workspace compression setting is still applied by the existing PDF image-conversion pipeline.\nAppearance: Adds the Daily JHA Compression Level preference. Manual Codemagic preflight contains a v0.8.7 regression guard and updated older tests. No GitHub Actions preflight or build added. Full Xcode compilation and device camera interaction require the next user-triggered Codemagic build.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.7-b100015/WorkHubIOS-unsigned.ipa",
-      "size": 3102556,
-      "sha256": "f2bca248456051cb827e6ef2b02fac0fbdbf5064ed63cfe3ca8a2f277dc6ec9c",
+      "version": "0.8.8",
+      "versionDate": "2026-11-20T16:41:13Z",
+      "versionDescription": "Added: Experimental native rectangular Lock Screen widget showing today's inspection PDF total and ECC/CAMH breakdown from the existing Today dashboard.\nAdded: App Group sharing of read-only counts, widget reload on saved/live updates, day rollover clearing, and tap-to-open Inspections → Today.\nSafety: No credentials or PDF bytes are shared, missing data is never mislabeled zero, and removing an account clears the widget summary.\nBuild: Manual IPA packaging now checks for the embedded WidgetKit extension. Actual sideload signing/App Group compatibility still needs an on-device test.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.8-b100017/WorkHubIOS-unsigned.ipa",
+      "size": 3151066,
+      "sha256": "92cc81504130fc1273e7c19e6ead9388a7cf1e18698d9f70bf55e8bda34a63d8",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.8",
+          "buildVersion": "100017",
+          "date": "2026-11-20T16:41:13Z",
+          "localizedDescription": "Added: Experimental native rectangular Lock Screen widget showing today's inspection PDF total and ECC/CAMH breakdown from the existing Today dashboard.\nAdded: App Group sharing of read-only counts, widget reload on saved/live updates, day rollover clearing, and tap-to-open Inspections → Today.\nSafety: No credentials or PDF bytes are shared, missing data is never mislabeled zero, and removing an account clears the widget summary.\nBuild: Manual IPA packaging now checks for the embedded WidgetKit extension. Actual sideload signing/App Group compatibility still needs an on-device test.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.8-b100017/WorkHubIOS-unsigned.ipa",
+          "size": 3151066,
+          "sha256": "92cc81504130fc1273e7c19e6ead9388a7cf1e18698d9f70bf55e8bda34a63d8",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.7",
           "buildVersion": "100015",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.8-b64/WorkHubIOS-unsigned.ipa",
           "size": 1574658,
           "sha256": "02f49240cd87407b71a95c825fb3d056ca83eed4f8055862b33c2fab043c8b1e",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.7",
-          "buildVersion": "59",
-          "date": "2026-11-13T15:36:15Z",
-          "localizedDescription": "Added: Rotate individual uploaded PDF or image pages 90° left or right in PDF Multi Tool, including Rotate controls in page menus and the full-page preview.\nUpdated: PDF thumbnails, preview and final merged export reflect each page's independent rotation; source PDFs stay unchanged.\nAdded: Left/right rotation controls for individual Daily JHA photos, including camera and Photos library imports.\nUpdated: Daily JHA export supports mixed portrait and landscape PDF page sizes rather than forcing every photo onto a portrait sheet.\nAdded: Automated rotation regression tests and output orientation checks.\nUnchanged: Inspections, Today dashboard, Google Drive and sideloader workflows remain intact.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.7-b59/WorkHubIOS-unsigned.ipa",
-          "size": 1545982,
-          "sha256": "59b77dcf41b1ac3a6e63a66044a29041d185e3af6c82d0df53cc0036fc66b83e",
           "minOSVersion": "17.0"
         }
       ],
