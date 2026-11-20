@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.9",
-      "versionDate": "2026-11-20T17:35:43Z",
-      "versionDescription": "Improved: Settings now presents native Google Sign-In first for a new Personal-mode iOS OAuth client, while old manual Client ID/Secret/refresh-token fields are collapsed into an advanced fallback.\nFixed: A revoked legacy manual refresh token no longer overrides a successfully restored or newly authorized native Google SDK session; migration removes stale credentials from Keychain.\nSecurity: Only an iOS OAuth client ID needs one-time Codemagic configuration. No client secret or Google OAuth Playground required; Google SDK renews access via Keychain.\nBuild: Manual Codemagic and GitHub Actions fail early when GOOGLE_IOS_CLIENT_ID is absent, avoiding distribution of IPAs without native login. Full build and sideload validation are pending.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.9-b100021/WorkHubIOS-unsigned.ipa",
-      "size": 3155687,
-      "sha256": "1221031ff3466a9f421352bdd04a6e5bf0ad0aecb21f73251debceed7fdd5822",
+      "version": "0.8.11",
+      "versionDate": "2026-11-20T20:07:33Z",
+      "versionDescription": "Improved: Browse → Inspections by day opens a dedicated date page rather than filling the search box.\nAdded: Two job-specific destinations (ECC and CAMH Forensics) with separate Harness/Lift counts and PDF lists, including Preview and Share / Save.\nImproved: Date-folder taps within source browsing and matching dates in fuzzy search use the same navigation; matching date rows are deduplicated across sources.\nPerformance: Grouping uses the existing local catalog once per metadata revision. No extra Drive fetches, and PDFs download only when opened. Partial-index counts are marked as provisional.\nUnchanged: Inspection caching, Daily JHA, Google Personal mode, Lock Screen widget, scanner and PDF tools. Source awaits manual macOS/iPhone compilation.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.11-b100023/WorkHubIOS-unsigned.ipa",
+      "size": 3220860,
+      "sha256": "aabbcedb853f410a46c8fc0ec651d938566fb2b59416a8f23572b4b830989543",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.11",
+          "buildVersion": "100023",
+          "date": "2026-11-20T20:07:33Z",
+          "localizedDescription": "Improved: Browse → Inspections by day opens a dedicated date page rather than filling the search box.\nAdded: Two job-specific destinations (ECC and CAMH Forensics) with separate Harness/Lift counts and PDF lists, including Preview and Share / Save.\nImproved: Date-folder taps within source browsing and matching dates in fuzzy search use the same navigation; matching date rows are deduplicated across sources.\nPerformance: Grouping uses the existing local catalog once per metadata revision. No extra Drive fetches, and PDFs download only when opened. Partial-index counts are marked as provisional.\nUnchanged: Inspection caching, Daily JHA, Google Personal mode, Lock Screen widget, scanner and PDF tools. Source awaits manual macOS/iPhone compilation.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.11-b100023/WorkHubIOS-unsigned.ipa",
+          "size": 3220860,
+          "sha256": "aabbcedb853f410a46c8fc0ec651d938566fb2b59416a8f23572b4b830989543",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.9",
           "buildVersion": "100021",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.0-b73/WorkHubIOS-unsigned.ipa",
           "size": 2003845,
           "sha256": "2502f92426957d7a1af7136b6cf2cb1863c37048f39be7896e2fc77013d58abb",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.9",
-          "buildVersion": "69",
-          "date": "2026-11-13T23:20:01Z",
-          "localizedDescription": "Fixed: Missing Lift pictograms on the Today dashboard and source rows; removed the unsupported SF Symbol that rendered blank.\nUpdated: Harness now defaults to a custom safety-harness drawing, while Lift defaults to a recognizable scissor-lift drawing instead of a generic checklist/unsupported symbol.\nAdded: Appearance → Inspections layout → Today dashboard icon designs, with 10 genuinely different pictograms for Harness and 10 for Lift, each independently selectable with a live visual preview.\nImproved: Native SwiftUI vector equipment artwork remains sharp in any appearance mode; unsupported optional system symbols gracefully fall back to an equipment icon instead of disappearing.\nImproved: Removed misleading action arrows from noninteractive Today summary cards.\nUnchanged: Inspection counts, Today refresh, ECC Daily Hand In, offline cache and PDF Multi Tool behavior remain the same.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.5.9-b69/WorkHubIOS-unsigned.ipa",
-          "size": 1616051,
-          "sha256": "9124a86ccc5ec8b646ea37a10ec419c47c312940c3d1ff464faad6b7078bdb63",
           "minOSVersion": "17.0"
         }
       ],
