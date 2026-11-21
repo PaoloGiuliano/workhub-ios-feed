@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.13",
-      "versionDate": "2026-11-21T00:05:00Z",
-      "versionDescription": "Added: Circular one-tile Lock Screen widget with today's total inspection PDF count; supports Number only and Number + PDFs formats.\nEnhanced: Existing rectangular widget retains ECC/CAMH counts with Clean, Balanced and Stacked layouts, optional checked time and rounded digits.\nAdded: Appearance → Lock Screen widgets page with previews and settings stored in the existing KravaSign-compatible App Group; reloading both WidgetKit timelines after changes.\nPreserved: Native Google sign-in, current-day-only counts, App Group build variable and a single widget extension; iOS controls widget tint and refresh frequency.\nBuild: Source and updated tests ready for manual Codemagic build and device validation.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.13-b100025/WorkHubIOS-unsigned.ipa",
-      "size": 3290305,
-      "sha256": "5e61dc5a74cee8c506cc86bc4162eeb8cb4579cb6dbb617b36f3457608f210bf",
+      "version": "0.8.14",
+      "versionDate": "2026-11-21T15:26:34Z",
+      "versionDescription": "Added: Documents → Videos subtab for native on-device MP4 compression with Files/Photos import, Preview, and Share / Save.\nAdded: Low/Medium/High compression levels and Discord under-20MB attempt that checks actual file size, preserving full clip duration.\nSafety: No automatic truncation, larger replacement files or remote uploads; reports clearly when 20MB cannot be met. Originals remain unchanged.\nAppearance: Video Compressor module visibility, default compression level and preferred Documents subtab are configurable. Existing tools remain intact.\nBuild: New offline regression tests; manual Codemagic/Xcode and iPhone testing remain outstanding.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.14-b100026/WorkHubIOS-unsigned.ipa",
+      "size": 3411284,
+      "sha256": "eea986426f3fbc8c676100924ae9e182e8509194bcf679dff3a76fc7ef2bbfb9",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.14",
+          "buildVersion": "100026",
+          "date": "2026-11-21T15:26:34Z",
+          "localizedDescription": "Added: Documents → Videos subtab for native on-device MP4 compression with Files/Photos import, Preview, and Share / Save.\nAdded: Low/Medium/High compression levels and Discord under-20MB attempt that checks actual file size, preserving full clip duration.\nSafety: No automatic truncation, larger replacement files or remote uploads; reports clearly when 20MB cannot be met. Originals remain unchanged.\nAppearance: Video Compressor module visibility, default compression level and preferred Documents subtab are configurable. Existing tools remain intact.\nBuild: New offline regression tests; manual Codemagic/Xcode and iPhone testing remain outstanding.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.14-b100026/WorkHubIOS-unsigned.ipa",
+          "size": 3411284,
+          "sha256": "eea986426f3fbc8c676100924ae9e182e8509194bcf679dff3a76fc7ef2bbfb9",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.13",
           "buildVersion": "100025",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.3-b81/WorkHubIOS-unsigned.ipa",
           "size": 2137910,
           "sha256": "96f0c6e22bc797a79c7697e650b9fb34b34b29e01dee7afcd932f1e2b50f9876",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.6.2",
-          "buildVersion": "79",
-          "date": "2026-11-14T00:14:13Z",
-          "localizedDescription": "Updated: Redesigned all twelve alternate WorkHub iPhone app icons with genuinely distinct central silhouettes at Home Screen size, rather than near-identical logo recolors.\nUpdated: Each option has a construction or inspection identity (hardhat, blueprint, shield, lift, harness, WH monogram, checklist, tools, documents, gear, fieldwork) and consistent WorkHub blue, white and orange palette.\nImproved: Smaller-size visual differentiation tests ensure all twelve choices remain distinct even in a 60px Home Screen preview.\nUnchanged: The original primary WorkHub icon, icon identifiers and restore-original action remain intact. Inspections, Daily JHA, PDF Multi Tool and cached data are unchanged.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.2-b79/WorkHubIOS-unsigned.ipa",
-          "size": 2139626,
-          "sha256": "da2cd7099f60d08ed47fa60996b75403ad1f95f69df92bdbe84b9eddb1bff5ac",
           "minOSVersion": "17.0"
         }
       ],
