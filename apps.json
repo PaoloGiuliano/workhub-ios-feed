@@ -36,16 +36,6 @@
           "minOSVersion": "17.0"
         },
         {
-          "version": "0.8.17",
-          "buildVersion": "100028",
-          "date": "2026-11-22T03:26:46Z",
-          "localizedDescription": "Reviewed: Image Cleanup pre-build safety and performance audit.\nFixed: Unlimited Back/Undo preserves later choices, and the batch queue always includes all explicitly marked Delete regardless of cursor.\nImproved: Persist newest-first photo index once per session and write only the changing decision journal on each action; reconcile photos removed externally without silently losing other decisions.\nAdded: Full visual deletion queue with removable thumbnails before a separate final confirmation and PhotoKit approval; retry/Keep-only handling for unavailable iCloud previews.\nCoverage: Includes hidden photos and burst images with explicit shared-library warning; standalone videos excluded.\nFixed: Removed leftover Discord under-20MB description from video appearance settings.\nBuild: Source and broader regression tests prepared; native compilation and device deletion are not yet verified.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.17-b100028/WorkHubIOS-unsigned.ipa",
-          "size": 3545680,
-          "sha256": "e21d0c522d2f36b49cecfca98fd92f60a409cf979a503e1a7deb728c654f8be2",
-          "minOSVersion": "17.0"
-        },
-        {
           "version": "0.8.14",
           "buildVersion": "100026",
           "date": "2026-11-21T15:26:34Z",
@@ -113,16 +103,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.7-b100015/WorkHubIOS-unsigned.ipa",
           "size": 3102556,
           "sha256": "f2bca248456051cb827e6ef2b02fac0fbdbf5064ed63cfe3ca8a2f277dc6ec9c",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.8.7",
-          "buildVersion": "100014",
-          "date": "2026-11-18T16:37:06Z",
-          "localizedDescription": "Compression terminology: All three Documents workspaces now use a Compression Level setting labeled Low / Medium / High. Low means less compression and greater retained image quality (usually larger output); High means more compression and generally smaller output. The underlying PDF, Scanner and Images preset identifiers and actual numerical settings are unchanged, with visual order reversed where necessary to preserve the correct direction for existing users. Lossless images retain the existing separate Lossless mode, where no lossy Compression Level is appropriate.\nDaily JHA: Adds the same Low / Medium / High Compression Level control to its image imports and photo capture. New JHA Photos library imports are encoded on a background task at the selected dimension/JPEG quality; the existing continuous JHA camera now uses the same level. The 20-image limit remains enforced, imported photos enter the draft in order and are saved together after import. Existing draft photos and generated Daily JHA archives are not recompressed retroactively.\nPDF Multi Tool: Replaces the one-photo UIImagePicker with the existing continuous camera workflow used for Daily JHA. Take up to 20 photos (or remaining PDF workspace slots), review the count, Undo Last, Cancel without importing, or tap Done to stage and import the entire batch to the PDF page stack at once. The PDF workspace compression setting is still applied by the existing PDF image-conversion pipeline.\nAppearance: Adds the Daily JHA Compression Level preference. Manual Codemagic preflight contains a v0.8.7 regression guard and updated older tests. No GitHub Actions preflight or build added. Full Xcode compilation and device camera interaction require the next user-triggered Codemagic build.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.7-b100014/WorkHubIOS-unsigned.ipa",
-          "size": 3101257,
-          "sha256": "e396b9f70025861e8834ce031ca5560abc36baf4feb3dd9ab40c0f03f2993eae",
           "minOSVersion": "17.0"
         },
         {
