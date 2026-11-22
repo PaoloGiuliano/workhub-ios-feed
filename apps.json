@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.17",
-      "versionDate": "2026-11-22T03:26:46Z",
-      "versionDescription": "Reviewed: Image Cleanup pre-build safety and performance audit.\nFixed: Unlimited Back/Undo preserves later choices, and the batch queue always includes all explicitly marked Delete regardless of cursor.\nImproved: Persist newest-first photo index once per session and write only the changing decision journal on each action; reconcile photos removed externally without silently losing other decisions.\nAdded: Full visual deletion queue with removable thumbnails before a separate final confirmation and PhotoKit approval; retry/Keep-only handling for unavailable iCloud previews.\nCoverage: Includes hidden photos and burst images with explicit shared-library warning; standalone videos excluded.\nFixed: Removed leftover Discord under-20MB description from video appearance settings.\nBuild: Source and broader regression tests prepared; native compilation and device deletion are not yet verified.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.17-b100028/WorkHubIOS-unsigned.ipa",
-      "size": 3545680,
-      "sha256": "e21d0c522d2f36b49cecfca98fd92f60a409cf979a503e1a7deb728c654f8be2",
+      "version": "0.8.15",
+      "versionDate": "2026-11-22T19:39:36Z",
+      "versionDescription": "WorkHub iOS v0.8.15 — next manual build after v0.8.14.\nVideo Compressor: removed redundant Discord mode; kept Low/Medium/High, with Low attempting true size reduction, medium/high stronger presets and explicit original-retained messaging when no smaller valid output is possible.\nNew Settings → Advanced → Image Cleanup: full Photos-access library review newest-first, one-tap Keep/Delete decisions, unlimited reversible draft, persistence across app restarts and photo-library reconciliation.\nSafety improvements: deletion is deferred until final visual thumbnail review and confirmation, with PhotoKit system approval; queued photos can be restored to Keep, hidden/burst assets included, iCloud retry/Keep-only fallback, no automatic deletion or separate backup.\nCode and regression tests improved after failed Codemagic build #27; native compilation and on-device Image Cleanup behavior still await the next manual build.\nThis is one consolidated candidate release, not three separate app builds.\nVideo compression correction: replaced incomparable AVAssetExportSession quality/resolution presets with a unified H.264/AAC encoder using ordered Low/Medium/High bitrate budgets (80%/55%/30% of original bytes as nominal targets), preserving portrait orientation, full duration and audio. Native device output sizes remain approximate.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.15-b100032/WorkHubIOS-unsigned.ipa",
+      "size": 3557093,
+      "sha256": "b5393fdf4caf466003b4043ef00623dff004a2574f7d25018637d96b02397df1",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.15",
+          "buildVersion": "100032",
+          "date": "2026-11-22T19:39:36Z",
+          "localizedDescription": "WorkHub iOS v0.8.15 — next manual build after v0.8.14.\nVideo Compressor: removed redundant Discord mode; kept Low/Medium/High, with Low attempting true size reduction, medium/high stronger presets and explicit original-retained messaging when no smaller valid output is possible.\nNew Settings → Advanced → Image Cleanup: full Photos-access library review newest-first, one-tap Keep/Delete decisions, unlimited reversible draft, persistence across app restarts and photo-library reconciliation.\nSafety improvements: deletion is deferred until final visual thumbnail review and confirmation, with PhotoKit system approval; queued photos can be restored to Keep, hidden/burst assets included, iCloud retry/Keep-only fallback, no automatic deletion or separate backup.\nCode and regression tests improved after failed Codemagic build #27; native compilation and on-device Image Cleanup behavior still await the next manual build.\nThis is one consolidated candidate release, not three separate app builds.\nVideo compression correction: replaced incomparable AVAssetExportSession quality/resolution presets with a unified H.264/AAC encoder using ordered Low/Medium/High bitrate budgets (80%/55%/30% of original bytes as nominal targets), preserving portrait orientation, full duration and audio. Native device output sizes remain approximate.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.15-b100032/WorkHubIOS-unsigned.ipa",
+          "size": 3557093,
+          "sha256": "b5393fdf4caf466003b4043ef00623dff004a2574f7d25018637d96b02397df1",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.17",
           "buildVersion": "100028",
@@ -263,16 +273,6 @@
           "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.1-b93/WorkHubIOS-unsigned.ipa",
           "size": 2212117,
           "sha256": "8c0c90dd934517d5e04dd5dc753471cbe46e1a2f12d28e410eece105147675b4",
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.7.0",
-          "buildVersion": "84",
-          "date": "2026-11-14T00:58:00Z",
-          "localizedDescription": "Added: Settings → Testing & diagnostics → Performance Testing, a fully on-device benchmark lab for measuring app performance without altering inspections or documents.\nAdded: Repeatable synthetic inspection-index benchmarks for daily summaries, fuzzy search, cached metadata encode/decode and count lookups, plus 12-page PDFKit opening, thumbnail rendering, merge/export and temporary storage I/O.\nAdded: Optional read-only benchmarks of the device's existing cached inspection metadata. No Google Drive API requests, downloads, or modifications are made.\nAdded: App memory snapshots, thermal/Low Power Mode indicators, median/min/max timings, fast (3 samples) and detailed (5 samples) runs, cancellation, locally saved history and shareable text reports.\nImproved: Previous-run comparisons support checking regressions after IPA updates. Test workloads use isolated synthetic data and temporary files, and production caches are left untouched.\nUnchanged: All inspection workflows, Daily JHA, PDF Multi Tool, icon customization and automatic AltStore/SideStore publishing.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.7.0-b84/WorkHubIOS-unsigned.ipa",
-          "size": 2204139,
-          "sha256": "8423750eae0ab674f0ebcb25aed1ffbdee3e7afb579520edbada0de38a7f1cd6",
           "minOSVersion": "17.0"
         }
       ],
