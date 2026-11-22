@@ -17,14 +17,24 @@
       "iconURL": "https://raw.githubusercontent.com/PaoloGiuliano/workhub-ios-feed/main/icon.png",
       "tintColor": "#1463B4",
       "category": "utilities",
-      "version": "0.8.14",
-      "versionDate": "2026-11-21T15:26:34Z",
-      "versionDescription": "Added: Documents → Videos subtab for native on-device MP4 compression with Files/Photos import, Preview, and Share / Save.\nAdded: Low/Medium/High compression levels and Discord under-20MB attempt that checks actual file size, preserving full clip duration.\nSafety: No automatic truncation, larger replacement files or remote uploads; reports clearly when 20MB cannot be met. Originals remain unchanged.\nAppearance: Video Compressor module visibility, default compression level and preferred Documents subtab are configurable. Existing tools remain intact.\nBuild: New offline regression tests; manual Codemagic/Xcode and iPhone testing remain outstanding.",
-      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.14-b100026/WorkHubIOS-unsigned.ipa",
-      "size": 3411284,
-      "sha256": "eea986426f3fbc8c676100924ae9e182e8509194bcf679dff3a76fc7ef2bbfb9",
+      "version": "0.8.17",
+      "versionDate": "2026-11-22T03:26:46Z",
+      "versionDescription": "Reviewed: Image Cleanup pre-build safety and performance audit.\nFixed: Unlimited Back/Undo preserves later choices, and the batch queue always includes all explicitly marked Delete regardless of cursor.\nImproved: Persist newest-first photo index once per session and write only the changing decision journal on each action; reconcile photos removed externally without silently losing other decisions.\nAdded: Full visual deletion queue with removable thumbnails before a separate final confirmation and PhotoKit approval; retry/Keep-only handling for unavailable iCloud previews.\nCoverage: Includes hidden photos and burst images with explicit shared-library warning; standalone videos excluded.\nFixed: Removed leftover Discord under-20MB description from video appearance settings.\nBuild: Source and broader regression tests prepared; native compilation and device deletion are not yet verified.",
+      "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.17-b100028/WorkHubIOS-unsigned.ipa",
+      "size": 3545680,
+      "sha256": "e21d0c522d2f36b49cecfca98fd92f60a409cf979a503e1a7deb728c654f8be2",
       "minOSVersion": "17.0",
       "versions": [
+        {
+          "version": "0.8.17",
+          "buildVersion": "100028",
+          "date": "2026-11-22T03:26:46Z",
+          "localizedDescription": "Reviewed: Image Cleanup pre-build safety and performance audit.\nFixed: Unlimited Back/Undo preserves later choices, and the batch queue always includes all explicitly marked Delete regardless of cursor.\nImproved: Persist newest-first photo index once per session and write only the changing decision journal on each action; reconcile photos removed externally without silently losing other decisions.\nAdded: Full visual deletion queue with removable thumbnails before a separate final confirmation and PhotoKit approval; retry/Keep-only handling for unavailable iCloud previews.\nCoverage: Includes hidden photos and burst images with explicit shared-library warning; standalone videos excluded.\nFixed: Removed leftover Discord under-20MB description from video appearance settings.\nBuild: Source and broader regression tests prepared; native compilation and device deletion are not yet verified.",
+          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.8.17-b100028/WorkHubIOS-unsigned.ipa",
+          "size": 3545680,
+          "sha256": "e21d0c522d2f36b49cecfca98fd92f60a409cf979a503e1a7deb728c654f8be2",
+          "minOSVersion": "17.0"
+        },
         {
           "version": "0.8.14",
           "buildVersion": "100026",
@@ -264,16 +274,6 @@
           "size": 2204139,
           "sha256": "8423750eae0ab674f0ebcb25aed1ffbdee3e7afb579520edbada0de38a7f1cd6",
           "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.6.3",
-          "buildVersion": "81",
-          "date": "2026-11-14T00:22:41Z",
-          "localizedDescription": "Fixed: WorkHub no longer falsely reports that changing the app icon failed when the iPhone Home Screen changes but UIApplication.alternateIconName remains stale.\nFixed: Selection now persists after the UIKit completion handler reports success, including when restoring the original icon, so the correct gallery checkmark survives relaunch.\nImproved: A valid stored successful selection takes precedence over a stale iOS icon-name getter; first-launch fallback still uses the actual getter when there is no saved choice.\nAdded: Regression tests for stale nil/old system values, successful changes, restoring Original WorkHub, and genuine iOS errors.\nUnchanged: All 12 alternate icon designs, original AppIcon, inspection workflows, Daily JHA, PDF tools, and automatic sideloader feed publishing.",
-          "downloadURL": "https://github.com/PaoloGiuliano/workhub-ios-feed/releases/download/v0.6.3-b81/WorkHubIOS-unsigned.ipa",
-          "size": 2137910,
-          "sha256": "96f0c6e22bc797a79c7697e650b9fb34b34b29e01dee7afcd932f1e2b50f9876",
-          "minOSVersion": "17.0"
         }
       ],
       "appPermissions": {
@@ -282,6 +282,10 @@
           {
             "name": "Camera",
             "usageDescription": "Scan paper documents and capture photos for PDF Multi Tool and ECC Daily JHA."
+          },
+          {
+            "name": "PhotoLibrary",
+            "usageDescription": "Review your photo library in Image Cleanup and delete only the photos you explicitly select at the end."
           }
         ]
       }
